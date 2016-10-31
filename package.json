@@ -9,5 +9,20 @@
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-w3c-html-validation": "^0.1.7"
-  }
+  },
+  "description": "[![Build Status](https://travis-ci.org/infsci2560fa16/full-stack-web.svg?branch=master)](https://travis-ci.org/infsci2560fa16/full-stack-web)",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/infsci2560fa16/full-stack-web-project-RoakyWood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/infsci2560fa16/full-stack-web-project-RoakyWood/issues"
+  },
+  "homepage": "https://github.com/infsci2560fa16/full-stack-web-project-RoakyWood#readme"
 }
