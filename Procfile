@@ -1,1 +1,1 @@
-web:    java -cp target\classes;target\dependency\* full-stack-web-project-RoakyWood.src.main.javaMain
+web:    java -cp target\classes;target\dependency\* full-stack-web-project-RoakyWood.src.main.java.Main
