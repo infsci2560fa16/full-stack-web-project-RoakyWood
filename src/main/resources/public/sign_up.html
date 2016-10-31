@@ -3,16 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Sign up Page</title>
-  <script>
-    function jim() {
-        //alert("Select OK to Acknowledge that you have read the terms and agree.");
-    }
-  </script>
   <link rel="stylesheet" type="text/css" href="stylesheets/raok.css">
 </head>
+
 <body id="bodlio">
   <h1 id = "titlio" >Welcome to the BACT Sign-up Page</h1>
-  <p class="hipplio">We are in full compliance with all HIPAA Regulations</p>
+  <p class="documentlio">Please enter the data below</p>
+  <table>
+      <tr>
+          <td>
+          
+            First name: <input id="jim" onfocus="if(this.value != '') {this.value=''}"; type="text" name="FirstName" value="Enter First Name"><br>
+            Last name:  <input id="jim" onfocus="if(this.value != '') {this.value=''}"; type="text" name="LastName"  value="Enter Last Name"><br>
+            <input id="myButton" type="submit" value="Submit" onclick="location.href = 'index.html';">
+           
+
+            <p>Click the "Submit" button to sign up for the Clinical Trial</p>
+        </td>
+      </tr>
+  </table>
   
   <p><a href="index.html">Return to Main Page</a></p>
 
