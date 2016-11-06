@@ -6,21 +6,52 @@
   <script type="text/javascript" src="js/raok.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/raok.css">
 </head>
-
 <body id="bodlio">
-  <h1 id = "titlio" >Sign-up - Bariatirc Assessment Clinical Trials</h1>
-  <p class="documentlio">Please enter the data below</p>
+  <h1 id = "titlio" >Sign-up - Bariatric Assessment Clinical Trials</h1>
   <table>
       <tr>
           <td>
-            <div>
-              First name: <input id="jim" type="text" name="FirstName" value="Enter First Name" onfocus="blocus()"><br>
-              Last name:  <input id="jee" type="text" name="LastName"  value="Enter Last Name" onfocus="blocus2()"><br>
-              <input id="myButton" type="submit" value="Confirm" onclick="location.href='confirm_data.html';">
-           </div>
-            <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
-        </td>
-      </tr>
+                <form action="push_to_xml_and_display_on_web_page.whatever">
+                  <fieldset>
+                        <p class="big_gold_text">Please enter data below</p>        
+                    <table>
+                        <tr>                
+                            <td class="white_text">City:</td><td><input id="city" type="text" name="City" value="City" onfocus="clear_on_focus(id)">
+                        </tr>
+                        <tr>
+                            <td class="white_text">DOB:</td><td><input id="dob" type="text" name="DOB" value="Date of Birth" onfocus="clear_on_focus(id)">
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">Height_in_Inches:</td><td><input id="height" type="text" name="Height" value="Height" onfocus="clear_on_focus(id)"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">State:</td><td><input id="state" type="text" name="State" value="State" onfocus="clear_on_focus(id)"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">Race:</td><td><input id="race" type="text" name="Race" value="Race" onfocus="clear_on_focus(id)"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">Nationality:</td><td><input id="nationality" type="text" name="Nationality" value="Nationality" onfocus="clear_on_focus(id)"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">Gender:</td><td><input id="gender" type="text" name="Gender" value="Gender" onfocus="clear_on_focus(id)"></td>
+                        </tr>
+                        <tr>
+                            <td class="white_text">Marital_Status: 
+                                <p><input type="radio" name="group1" value="male" onclick="radio_value(name)">Male</p>
+                                <p><input type="radio" name="group1" value="female" onclick="radio_value(name)">Female</p>
+                                <p><input type="radio" name="group1" value="bowie" onclick="radio_value(name)">Bowie</p>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </table>
+                    <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
+                    <input type="submit" value="Submit">
+                  </fieldset>
+                </form>
+         </td>
+       </tr>
   </table>
     <footer>
         <a href="index.html">

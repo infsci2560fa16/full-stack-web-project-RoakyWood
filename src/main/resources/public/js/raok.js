@@ -2,14 +2,41 @@ function agree() {
         alert("Select OK to Acknowledge that you have read the terms and agree.");
 }
 
-function blocus(){
+//Take in parameter to call the one function
+function clear_on_focus(subject_field){
+    var my_subject_field = subject_field;
     if(this.value !==''){
-        document.getElementById("jim").value=''; 
-    }
+        document.getElementById(my_subject_field).value='';
+        return false; 
+    } 
 }
 
-function blocus2(){
-    if(this.value !==''){
-        document.getElementById("jee").value='';
+function slick(){
+    location.href='sign_up.html';
+}
+
+function hlick(){
+    location.href='help.html';
+}
+
+function cdlick(){
+    location.href='confirm_data.html';
+}
+
+function colick(){
+    location.href='congrats.html';
+}
+
+function ilick(){
+    location.href='index.html';
+}
+
+function radio_value(){
+var radios = document.getElementsByName('group1');
+    for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+            alert(radios[i].value);
+            break;
+        }
     }
 }
