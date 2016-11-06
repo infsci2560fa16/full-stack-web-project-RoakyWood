@@ -2,28 +2,30 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Sign up Page</title>
+  <title>BACT Sign-up</title>
+  <script type="text/javascript" src="js/raok.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/raok.css">
 </head>
 
 <body id="bodlio">
-  <h1 id = "titlio" >Welcome to the BACT Sign-up Page</h1>
+  <h1 id = "titlio" >Sign-up - Bariatirc Assessment Clinical Trials</h1>
   <p class="documentlio">Please enter the data below</p>
   <table>
       <tr>
           <td>
-          
-            First name: <input id="jim" onfocus="if(this.value != ''){this.value=''}" type="text" name="FirstName" value="Enter First Name"><br>
-            Last name:  <input id="jee" onfocus="if(this.value != ''){this.value=''}" type="text" name="LastName"  value="Enter Last Name"><br>
-            <input id="myButton" type="submit" value="Submit" onclick="location.href = 'index.html';">
-           
-
-            <p>Click the "Submit" button to sign up for the Clinical Trial</p>
+            <div>
+              First name: <input id="jim" type="text" name="FirstName" value="Enter First Name" onfocus="blocus()"><br>
+              Last name:  <input id="jee" type="text" name="LastName"  value="Enter Last Name" onfocus="blocus2()"><br>
+              <input id="myButton" type="submit" value="Confirm" onclick="location.href='confirm_data.html';">
+           </div>
+            <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
         </td>
       </tr>
   </table>
-  
-  <p><a href="index.html">Return to Main Page</a></p>
-
+    <footer>
+        <a href="index.html">
+            <img src="graphics/bact_logo.jpg" alt="Return to Home Page"/>
+        </a>
+    </footer>
 </body>
 </html>

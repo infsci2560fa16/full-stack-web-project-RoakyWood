@@ -39,4 +39,23 @@
     color: goldenrod;
     position: relative;
 }
+.modifilio {
+    background: deepskyblue;
+    border: 2px dotted border=darkgoldenrod;
+    border-radius: 20%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 10%;
+    max-width: 75%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 400px;
+}
 
+.whitlio {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
