@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>BACT Sign-up</title>
+  <script type="text/javascript" src="js/raok.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/raok.css">
+</head>
+<body id="bodlio">
+  <h1 id = "titlio" >Status Calculations - Bariatric Assessment Clinical Trials</h1>
+  <table>
+      <tr>
+          <td>
+                <form action="push_to_xml_and_display_on_web_page.whatever">
+                  <fieldset>
+                        <p class="big_gold_text">Please enter data to compute BMI, BMR and Bodyfat</p>        
+                    <table>
+                        <tr>
+                            <td class="white_text">Computed Age:</td>
+                            <td><input id="computed_age" type="text" name="Computed_Age" value="Computed Age"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">Height:</td>
+                            <td><input id="entered_height" type="text" name="Height_DB" value="Entered Height"></td>
+                        </tr>
+                        <tr>
+                            <td class="white_text">Gender:</td>
+                            <td><input type="text" id="gender_db" name="Gender_DB" value="Male"></td>
+                        </tr>
+                        <tr>
+                            <td class="white_text">Please Enter your Current Bodyweight:</td>
+                            <td><input id="weight" type="text" name="Weight" value="Weight"></td>
+                        </tr>
+                        <tr>
+                            <td class="white_text">Please Enter your Current Waist Size:</td>
+                            <td><input id="waist" type="text" name="Waist" value="Waist"></td>
+                        </tr>
+                    </table>
+                    <p class="whitlio">Click the Compute Data button to calculate values</p>
+                    <input type="submit" value="Submit">
+                  </fieldset>
+                </form>
+         </td>
+       </tr>
+  </table>
+    <footer>
+        <p>
+            <input class = "help_button" type = "button" value="Click to Get Help" onclick="hlick()">
+        </p>
+        <a href="index.html">
+            <img src="graphics/bact_logo.jpg" alt="Return to Home Page"/>
+        </a>
+    </footer>
+</body>
+</html>

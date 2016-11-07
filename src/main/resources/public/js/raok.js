@@ -31,8 +31,12 @@ function ilick(){
     location.href='index.html';
 }
 
+function stlick(){
+    location.href='status.html';
+}
+
 function radio_value(){
-var radios = document.getElementsByName('group1');
+var radios = document.getElementsByName('gender');
     for (var i = 0, length = radios.length; i < length; i++) {
         if (radios[i].checked) {
             alert(radios[i].value);
