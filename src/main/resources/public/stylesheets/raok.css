@@ -81,3 +81,9 @@
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.footlio {
+    border-style:double;
+    border-color:goldenrod;
+    border-width:5px;
+}

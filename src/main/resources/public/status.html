@@ -7,11 +7,11 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/raok.css">
 </head>
 <body id="bodlio">
-  <h1 id = "titlio" >Status Calculations - Bariatric Assessment Clinical Trials</h1>
+  <h1 id = "titlio" >Daily Update and Status Calculations - Bariatric Assessment Clinical Trials</h1>
   <table>
       <tr>
           <td>
-                <form action="push_to_xml_and_display_on_web_page.whatever">
+                <form  name="status_info" action="" method="post" onsubmit="thlick();return false;">
                   <fieldset>
                         <p class="big_gold_text">Please enter data to compute BMI, BMR and Bodyfat</p>        
                     <table>
@@ -37,13 +37,13 @@
                         </tr>
                     </table>
                     <p class="whitlio">Click the Compute Data button to calculate values</p>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Compute Data">
                   </fieldset>
                 </form>
          </td>
        </tr>
   </table>
-    <footer>
+    <footer class="footlio">
         <p>
             <input class = "help_button" type = "button" value="Click to Get Help" onclick="hlick()">
         </p>

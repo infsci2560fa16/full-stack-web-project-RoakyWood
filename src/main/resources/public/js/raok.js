@@ -1,5 +1,7 @@
-function agree() {
-        alert("Select OK to Acknowledge that you have read the terms and agree.");
+function agree(url) {
+        //alert("Select OK to Acknowledge that you have read the terms and agree.");
+        my_url = url;
+	    newwindow=window.open(url,'Acknowledge','height=600,width=800');
 }
 
 //Take in parameter to call the one function
@@ -11,12 +13,20 @@ function clear_on_focus(subject_field){
     } 
 }
 
+function closelio(){
+    window.close();
+}
+
 function slick(){
     location.href='sign_up.html';
 }
 
 function hlick(){
     location.href='help.html';
+}
+
+function thlick(){
+    location.href='thanx.html';
 }
 
 function cdlick(){
@@ -44,3 +54,4 @@ var radios = document.getElementsByName('gender');
         }
     }
 }
+
