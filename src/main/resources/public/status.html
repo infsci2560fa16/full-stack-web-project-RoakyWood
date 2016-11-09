@@ -13,53 +13,50 @@
           <td>
 <form name="status_form">
 
-<p class="hipplio">We are Happy with your Commitment!</p>
-<p class="big_gold_text">Key Progress Indicators</p>
-<p>
-<table class="schlabel">
-  <tr>
-    <th colspan="2">Please enter your:</th>
-  </tr>
-  <tr>
-    <td>Height:</td><td><input type="text" id="feet" /><input type="text" id="inches" /></td>
-  </tr>
-  <tr>
-    <td>Weight:</td><td><input type="text" id="pounds" /> lb</td>
-  </tr>
-  <tr>
-    <td>Waist Size:</td><td><input type="text" id="waist" /></td>
-  </tr>
-  <tr>
-    <td>Age:</td><td><input type="text" id="years" />years</td>
-  </tr>
-</table>
-</p>
+    <p class="hipplio">We are Happy with your Commitment!</p>
+    <p class="big_gold_text">Key Progress Indicators</p>
 
-<p>
-<input type="button" id="go" onclick="calculate()" value="Click here to see results"/>
-</p>
+    <table class="schlabel">
+        <tr>
+            <th colspan="2">Please enter data</th>
+        </tr>
+        <tr>
+            <td>Height:</td><td><input type="text" id="feet" />ft.<input type="text" id="inches" />in.</td>
+        </tr>
+        <tr>
+            <td>Weight:</td><td><input type="text" id="pounds" />lb.</td>
+        </tr>
+        <tr>
+            <td>Waist Size:</td><td><input type="text" id="waist" />in.</td>
+        </tr>
+        <tr>
+            <td>Age:</td><td><input type="text" id="years" />years</td>
+        </tr>
+    </table>
 
-<p>
-<table align="center" bgcolor="#FFFAFA" border="1" cellpadding="5" cellspacing="0">
-  <tr>
-    <td>BMI:</td><td><input type="text" id="bmi" /></td>
-  </tr>
-  <tr>
-    <td>BMR:</td><td><input type="text" id="bmr" /></td>
-  </tr>
-  <tr>
-    <td>Body Fat:</td><td><input type="text" id="bodyFat" /> %</td>
-  </tr>
-</table>
-</p>
+    <p><input type="button" id="go" onclick="calculate()" value="Click for Results"/></p>
 
+    <table class="schlabel">
+    <tr>
+        <td>BMI:</td><td><input type="text" id="bmi" /></td>
+    </tr>
+    <tr>
+        <td>BMR:</td><td><input type="text" id="bmr" /></td>
+    </tr>
+    <tr>
+        <td>Body Fat:</td><td><input type="text" id="bodyFat" /> %</td>
+    </tr>
+    </table>
 </form>
+        <p>
+            <input type="button" id="proceed" onclick="thlick()" value="Click to Proceed">
+        </p>
          </td>
        </tr>
   </table>
     <footer class="footlio">
         <p>
-            <input class = "help_button" type = "button" value="Click to Get Help" onclick="hlick()">
+            <input class="help_button" type = "button" onclick="hlick()" value="Click to Get Help">
         </p>
         <a href="index.html">
             <img src="graphics/bact_logo.jpg" alt="Return to Home Page"/>

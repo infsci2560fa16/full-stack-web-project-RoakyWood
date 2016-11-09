@@ -88,5 +88,5 @@ function calculate() {
 
 	document.getElementById("bmi").value = BMI;
 	document.getElementById("bmr").value = BMR;
-	document.getElementById("bodyFat").value = bodyFatPercent
+	document.getElementById("bodyFat").value = bodyFatPercent;
 } // calculate
