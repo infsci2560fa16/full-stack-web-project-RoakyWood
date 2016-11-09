@@ -87,3 +87,9 @@
     border-color:goldenrod;
     border-width:5px;
 }
+
+.schlabel {
+    background-color:white;
+    border:5px;
+    border-color:goldenrod;
+}

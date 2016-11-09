@@ -11,35 +11,49 @@
   <table>
       <tr>
           <td>
-                <form  name="status_info" method="post" onsubmit="thlick();return false;">
-                  <fieldset>
-                        <p class="big_gold_text">Please enter data to compute BMI, BMR and Bodyfat</p>        
-                    <table>
-                        <tr>
-                            <td class="white_text">Computed Age:</td>
-                            <td><input id="computed_age" type="text" name="Computed_Age" value="Computed Age"></td>
-                        </tr>
-                        <tr>                            
-                            <td class="white_text">Height:</td>
-                            <td><input id="entered_height" type="text" name="Height_DB" value="Entered Height"></td>
-                        </tr>
-                        <tr>
-                            <td class="white_text">Gender:</td>
-                            <td><input type="text" id="gender_db" name="Gender_DB" value="Male"></td>
-                        </tr>
-                        <tr>
-                            <td class="white_text">Please Enter your Current Bodyweight:</td>
-                            <td><input id="weight" type="text" name="Weight" value="Weight"></td>
-                        </tr>
-                        <tr>
-                            <td class="white_text">Please Enter your Current Waist Size:</td>
-                            <td><input id="waist" type="text" name="Waist" value="Waist"></td>
-                        </tr>
-                    </table>
-                    <p class="whitlio">Click the Compute Data button to calculate values</p>
-                    <input type="submit" value="Compute Data">
-                  </fieldset>
-                </form>
+<form name="status_form">
+
+<p class="hipplio">We are Happy with your Commitment!</p>
+<p class="big_gold_text">Key Progress Indicators</p>
+<p>
+<table class="schlabel">
+  <tr>
+    <th colspan="2">Please enter your:</th>
+  </tr>
+  <tr>
+    <td>Height:</td><td><input type="text" id="feet" /><input type="text" id="inches" /></td>
+  </tr>
+  <tr>
+    <td>Weight:</td><td><input type="text" id="pounds" /> lb</td>
+  </tr>
+  <tr>
+    <td>Waist Size:</td><td><input type="text" id="waist" /></td>
+  </tr>
+  <tr>
+    <td>Age:</td><td><input type="text" id="years" />years</td>
+  </tr>
+</table>
+</p>
+
+<p>
+<input type="button" id="go" onclick="calculate()" value="Click here to see results"/>
+</p>
+
+<p>
+<table align="center" bgcolor="#FFFAFA" border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <td>BMI:</td><td><input type="text" id="bmi" /></td>
+  </tr>
+  <tr>
+    <td>BMR:</td><td><input type="text" id="bmr" /></td>
+  </tr>
+  <tr>
+    <td>Body Fat:</td><td><input type="text" id="bodyFat" /> %</td>
+  </tr>
+</table>
+</p>
+
+</form>
          </td>
        </tr>
   </table>
