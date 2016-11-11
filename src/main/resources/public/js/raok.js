@@ -90,3 +90,4 @@ function calculate() {
 	document.getElementById("bmr").value = BMR;
 	document.getElementById("bodyFat").value = bodyFatPercent;
 } // calculate
+
