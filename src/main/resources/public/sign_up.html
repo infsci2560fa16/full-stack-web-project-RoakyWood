@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>BACT Sign-up</title>
-  <script type="text/javascript" src="js/raok.js"></script>
   <link rel="stylesheet" type="text/css" href="stylesheets/raok.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jqneu.js"></script>
+  <script type="text/javascript" src="js/raok.js"></script>
+  
+  
 </head>
 <body id="bodlio">
   <h1 id = "titlio" >Sign-up - Bariatric Assessment Clinical Trials</h1>
@@ -19,31 +23,31 @@
                     <table>
                         <tr>                
                             <td class="white_text">City:</td>
-                            <td><input id="city" type="text" name="City" value="City" onfocus="clear_on_focus(id)"></td>
+                            <td><input id="city" type="text" name="City" value="City" onblur="appendTextc()"></td>
                         </tr>
                         <tr>
                             <td class="white_text">DOB:</td>
-                            <td><input id="dob" type="text" name="DOB" value="Date of Birth" onfocus="clear_on_focus(id)"></td>
+                            <td><input id="dob" type="text" name="DOB" value="Date of Birth" onblur="appendTextd()"></td>
                         </tr>
                         <tr>                            
                             <td class="white_text">Height_in_Inches:</td>
-                            <td><input id="height" type="text" name="Height" value="Height" onfocus="clear_on_focus(id)"></td>
+                            <td><input id="height" type="text" name="Height" value="Height" onblur="appendTexth()"></td>
                         </tr>
                         <tr>                            
                             <td class="white_text">State:</td>
-                            <td><input id="state" type="text" name="State" value="State" onfocus="clear_on_focus(id)"></td>
+                            <td><input id="state" type="text" name="State" value="State" onblur="appendTexts()"></td>
                         </tr>
                         <tr>                            
                             <td class="white_text">Race:</td>
-                            <td><input id="race" type="text" name="Race" value="Race" onfocus="clear_on_focus(id)"></td>
+                            <td><input id="race" type="text" name="Race" value="Race" onblur="appendTextr()"></td>
                         </tr>
                         <tr>                            
                             <td class="white_text">Nationality:</td>
-                            <td><input id="nationality" type="text" name="Nationality" value="Nationality" onfocus="clear_on_focus(id)"></td>
+                            <td><input id="nationality" type="text" name="Nationality" value="Nationality" onblur="appendTextn()"></td>
                         </tr>
                         <tr>                            
                             <td class="white_text">Marital_Status:</td>
-                            <td><input id="marital" type="text" name="Marital" value="Marital Status" onfocus="clear_on_focus(id)"></td>
+                            <td><input id="marital" type="text" name="Marital" value="Marital Status" onblur="appendTextm()"></td>
                         </tr>
                         <tr>
                             <td class="white_text">Gender:</td>
@@ -52,6 +56,29 @@
                                 <p><input type="radio" name="gender" value="female" onclick="radio_value(name)">Female</p>
                                 <p><input type="radio" name="gender" value="bowie" onclick="radio_value(name)">Bowie</p>
                             </td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td id="destino_city" class="destino">You entered this data:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_dob" class="destino">You entered this data:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_height" class="destino">You entered this data:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_state" class="destino">You entered this data:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_race" class="destino">You entered this data:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_nationality" class="destino">You entered this data:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_married" class="destino">You entered this data:</td>
                         </tr>
                     </table>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
