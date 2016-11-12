@@ -46,3 +46,12 @@ function appendTextr() {
         $("#destino_race").append(" " + data + " ");
     });
 }
+
+function appendTextg() {
+    $(document).ready(function(){
+        $("#destino_gender").empty();
+        var data = $('input[name=gender]:checked').val();
+        $("#destino_gender").append("You entered this data: " + data);
+    });
+}
+

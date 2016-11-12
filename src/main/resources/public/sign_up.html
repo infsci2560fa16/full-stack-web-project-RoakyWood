@@ -51,14 +51,17 @@
                         </tr>
                         <tr>
                             <td class="white_text">Gender:</td>
-                            <td>
-                                <p><input type="radio" name="gender" value="male" onclick="radio_value(name)">Male</p>
-                                <p><input type="radio" name="gender" value="female" onclick="radio_value(name)">Female</p>
-                                <p><input type="radio" name="gender" value="bowie" onclick="radio_value(name)">Bowie</p>
+                            <td> 
+                                <p><input type="radio" name="gender" value="Male" onclick="appendTextg()">Male</p>
+                                <p><input type="radio" name="gender" value="Female" onclick="appendTextg()">Female</p>
+                                <p><input type="radio" name="gender" value="Bowie" onclick="appendTextg()">Bowie</p>
                             </td>
                         </tr>
                     </table>
                     <table>
+                        <tr>
+                            <td id="destino_gender" class="destino">You entered this data:</td>
+                        </tr>
                         <tr>
                             <td id="destino_city" class="destino">You entered this data:</td>
                         </tr>
