@@ -15,8 +15,11 @@
     transform: translate(-50%, -50%);
 }
 #bodlio{
-    background-color: mediumpurple;
+    background-color:darkblue;
     padding-top: 30px;
+}
+#navbar{
+    background-color:maroon;
 }
 .hipplio {
     background: maroon;
