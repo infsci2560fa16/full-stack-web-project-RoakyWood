@@ -4,7 +4,7 @@
   <#include "header.ftl">
 </head>
 
-<body>
+<body id="bodlio">
 
   <#include "nav.ftl">
 
