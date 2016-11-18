@@ -3,45 +3,20 @@
 <head>
   <#include "header.ftl">
 </head>
-
-<body id="bodlio">
-
-  <#include "nav.ftl">
-
-<div class="jumbotron text-center">
-  <div class="container">
-    <a href="/" class="lang-logo">
-      <img src="graphics/bact_logo.jpg">
-    </a>
+  <body id="bodlio">
+    <#include "nav.ftl">
     <h1 id = "titlio" >Welcome to Bariatric Assessment Clinical Trials</h1>
-    <p>This is a sample Java application deployed to Heroku. It's a reasonably simple app - but a good foundation for understanding how to get the most out of the Heroku platform.</p>
-    <a type="button" class="btn btn-lg btn-default" href="https://devcenter.heroku.com/articles/getting-started-with-java"><span class="glyphicon glyphicon-flash"></span> Getting Started with Java</a>
-  </div>
-</div>
-<div class="container">
-  <div class="alert alert-info text-center" role="alert">
-    To deploy your own copy, and learn the fundamentals of the Heroku platform, head over to the <a href="https://devcenter.heroku.com/articles/getting-started-with-java" class="alert-link">Getting Started with Java on Heroku</a> tutorial.
-  </div>
-  <hr>
-  <div class="row">
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-info-sign"></span> How this sample app works</h3>
-      <ul>
-        <li>When Heroku received the source code, it grabbed all the dependencies in the <a href="https://github.com/heroku/java-getting-started/blob/master/pom.xml">pom.xml</a>.</li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      <h3><span class="glyphicon glyphicon-link"></span> Helpful Links</h3>
-      <ul>
-        <li><a href="https://www.heroku.com/home">Heroku</a></li>
-       </ul>
-    </div>
-  </div> <!-- row -->
-   <div class="alert alert-info text-center" role="alert">
-    Please do work
-  </div>
-</div>
-
-
-</body>
+    <p class="hipplio">We are in full compliance with all HIPAA Regulations</p>
+    <div class="devo">Please consult the Health and Human Services Website for further information on your rights under the HIPAA law. </div>
+    <p><input class = "buttonlio" type = "button" value="Accept Terms to Continue" onclick="agree('ack.html')"></p>
+    <p><input class = "signup_button" type = "button" value="Click to Sign-up" onclick="slick()"></p>
+    <footer class="footlio">
+        <p>
+            <input class = "help_button" type = "button" value="Click to Get Help" onclick="hlick()">
+        </p>
+        <a href="index.html">
+            <img src="graphics/bact_logo.jpg" alt="Return to Home Page"/>
+        </a>
+    </footer>
+  </body>
 </html>
