@@ -58,7 +58,7 @@
         <p>
             <input class="help_button" type = "button" onclick="hlick()" value="Click to Get Help">
         </p>
-        <a href="index.html">
+        <a href="index.ftl">
             <img src="graphics/bact_logo.jpg" alt="Return to Home Page"/>
         </a>
     </footer>
