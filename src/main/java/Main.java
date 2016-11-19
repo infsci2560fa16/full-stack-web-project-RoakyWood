@@ -22,7 +22,7 @@ public class Main {
     staticFileLocation("/public");
 
     get("/hello", (req, res) -> "Hello World");
-
+    get("/test", (req, res) -> "This is a test of the emergency broadcast system.");
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             attributes.put("message", "Hello World!");
