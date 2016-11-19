@@ -54,16 +54,16 @@ public class Main {
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
-            outputs.add( "Subject: " + rss.getString("subject_id"));
+            outputs.add( "Subject: " + rss.getInt("subject_id"));
             outputs.add( "City: " + rss.getString("city"));
             outputs.add( "State: " + rss.getString("state"));
             outputs.add( "Gender: " + rss.getString("gender"));
             outputs.add( "Marital: " + rss.getString("marital"));
-            outputs.add( "Height: " + rss.getString("height"));
-            outputs.add( "Date of Birth: " + rss.getString("dob"));
-            outputs.add( "Starting Weight: " + rss.getString("start_weight"));
-            outputs.add( "Starting Waist: " + rss.getString("start_waist"));
-            outputs.add( "Starting Date: " + rss.getString("date_entry"));
+            outputs.add( "Height: " + rss.getDouble("height"));
+            outputs.add( "Date of Birth: " + rss.getDate("dob"));
+            outputs.add( "Starting Weight: " + rss.getDouble("start_weight"));
+            outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
+            outputs.add( "Starting Date: " + rss.getDate("date_entry"));
           }
 
           attributes.put("results", outputs);
