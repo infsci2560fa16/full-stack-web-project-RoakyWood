@@ -50,11 +50,20 @@ public class Main {
           */
 
           Statement stmts = connection.createStatement();
-          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Pittsburgh','PA','Male','M','75.5','1961-12-20','284','33.5','now()')");
-          ResultSet rss = stmts.executeQuery("SELECT city FROM subject");
+          //stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Pittsburgh','PA','Male','M','75.5','1961-12-20','284','33.5','now()')");
+          ResultSet rss = stmts.executeQuery("SELECT * FROM subject");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
-            outputs.add( "Read from DB: " + rss.getString("city"));
+            outputs.add( "Subject: " + rss.getString("subject_id"));
+            outputs.add( "City: " + rss.getString("city"));
+            outputs.add( "State: " + rss.getString("state"));
+            outputs.add( "Gender: " + rss.getString("gender"));
+            outputs.add( "Marital: " + rss.getString("marital"));
+            outputs.add( "Height: " + rss.getString("height"));
+            outputs.add( "Date of Birth: " + rss.getString("dob"));
+            outputs.add( "Starting Weight: " + rss.getString("start_weight"));
+            outputs.add( "Starting Waist: " + rss.getString("start_waist"));
+            outputs.add( "Starting Date: " + rss.getString("date_entry"));
           }
 
           attributes.put("results", outputs);
