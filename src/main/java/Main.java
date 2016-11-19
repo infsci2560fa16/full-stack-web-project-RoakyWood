@@ -48,13 +48,13 @@ public class Main {
           attributes.put("results", output);
           return new ModelAndView(attributes, "db.ftl");
           */
-          
+
           Statement stmts = connection.createStatement();
           stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Pittsburgh','PA','Male','M','75.5','1961-12-20','284','33.5','now()')");
-          ResultSet rss = stmts.executeQuery("SELECT dob FROM subject");
+          ResultSet rss = stmts.executeQuery("SELECT city FROM subject");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
-            outputs.add( "Read from DB: " + rss.getString("City"));
+            outputs.add( "Read from DB: " + rss.getString("city"));
           }
 
           attributes.put("results", outputs);
