@@ -11,9 +11,9 @@
                      <p class="modifilio">Good Luck in your Endeavors!</p>
                     <p>
         <div class="container">
-                <ul class="listo">
+                <ul>
                     <#list results as x>
-                        <li> ${x} </li>
+                        <li class="listo"> ${x} </li>
                     </#list>
                 </ul>
         </div>

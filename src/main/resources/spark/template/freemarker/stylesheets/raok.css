@@ -112,6 +112,7 @@
     font-size:16px;
     color:white;
 }
+
 nav{    
   width: 150px;
   float: left;
@@ -120,10 +121,8 @@ nav{
   padding: 0;
   margin-right: 10px;
 }
+
 .listo {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: goldenrod;
-    border-style: solid;
-    border-width: 6px;
-    border-color: black;
 }
