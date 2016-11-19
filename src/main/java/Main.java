@@ -36,7 +36,7 @@ public class Main {
         try {
           connection = DatabaseUrl.extract().getConnection();
 
-          Statement stmt = connection.createStatement();
+          /*Statement stmt = connection.createStatement();
           stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
           stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
           ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
@@ -47,7 +47,8 @@ public class Main {
 
           attributes.put("results", output);
           return new ModelAndView(attributes, "db.ftl");
-
+          */
+          
           Statement stmts = connection.createStatement();
           stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Pittsburgh','PA','Male','M','75.5','1961-12-20','284','33.5','now()')");
           ResultSet rss = stmts.executeQuery("SELECT dob FROM subject");
