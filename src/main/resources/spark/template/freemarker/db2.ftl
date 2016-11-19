@@ -10,10 +10,10 @@
                 <div class="devo">Your current data will be updated on the status page.</div>
                      <p class="modifilio">Good Luck in your Endeavors!</p>
                     <p>
-        <div class="container">
-                <ul>
+        <div>
+                <ul class="listo">
                     <#list results as x>
-                        <li class="listo"> ${x} </li>
+                        <li> ${x} </li>
                     </#list>
                 </ul>
         </div>
