@@ -11,8 +11,7 @@
                      <p class="modifilio">Good Luck in your Endeavors!</p>
                     <p>
         <div class="container">
-            <h1>Database Output</h1>
-                <ul>
+                <ul class="listo">
                     <#list results as x>
                         <li> ${x} </li>
                     </#list>
