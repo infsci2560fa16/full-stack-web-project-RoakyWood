@@ -19,29 +19,9 @@
                             <td class="white_text">City:</td>
                             <td><input id="city" type="text" name="City" value="City" onblur="appendTextc()"></td>
                         </tr>
-                        <tr>
-                            <td class="white_text">DOB:</td>
-                            <td><input id="dob" type="text" name="DOB" value="Date of Birth" onblur="appendTextd()"></td>
-                        </tr>
-                        <tr>                            
-                            <td class="white_text">Height_in_Inches:</td>
-                            <td><input id="height" type="text" name="Height" value="Height" onblur="appendTexth()"></td>
-                        </tr>
                         <tr>                            
                             <td class="white_text">State:</td>
                             <td><input id="state" type="text" name="State" value="State" onblur="appendTexts()"></td>
-                        </tr>
-                        <tr>                            
-                            <td class="white_text">Race:</td>
-                            <td><input id="race" type="text" name="Race" value="Race" onblur="appendTextr()"></td>
-                        </tr>
-                        <tr>                            
-                            <td class="white_text">Nationality:</td>
-                            <td><input id="nationality" type="text" name="Nationality" value="Nationality" onblur="appendTextn()"></td>
-                        </tr>
-                        <tr>                            
-                            <td class="white_text">Marital_Status:</td>
-                            <td><input id="marital" type="text" name="Marital" value="Marital Status" onblur="appendTextm()"></td>
                         </tr>
                         <tr>
                             <td class="white_text">Gender:</td>
@@ -50,6 +30,30 @@
                                 <p><input type="radio" name="gender" value="Female" onclick="appendTextg()">Female</p>
                                 <p><input type="radio" name="gender" value="Bowie" onclick="appendTextg()">Bowie</p>
                             </td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">Marital_Status:</td>
+                            <td><input id="marital" type="text" name="Marital" value="Marital Status" onblur="appendTextm()"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">Height_in_Inches:</td>
+                            <td><input id="height" type="text" name="Height" value="Height" onblur="appendTexth()"></td>
+                        </tr>
+                        <tr>
+                            <td class="white_text">DOB:</td>
+                            <td><input id="dob" type="text" name="DOB" value="Date of Birth" onblur="appendTextd()"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">:</td>
+                            <td><input id="start_weight" type="text" name="Starting Weight" value="Race" onblur="appendTextr()"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">:</td>
+                            <td><input id="start_waist" type="text" name="Starting Waist" value="Nationality" onblur="appendTextn()"></td>
+                        </tr>
+                        <tr>                            
+                            <td class="white_text">:</td>
+                            <td><input id="date_entry" type="text" name="Current Date" value="Nationality" onblur="appendTextn()"></td>
                         </tr>
                     </table>
                     <table>

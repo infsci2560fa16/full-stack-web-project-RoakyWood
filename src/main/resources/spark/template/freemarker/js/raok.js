@@ -62,19 +62,19 @@ function calculate() {
 	var factor1, factor2, leanBodyMass, bodyFatWeight;
 	var BMI, BMR, bodyFatPercent;
 
-	feet   = document.getElementById("feet").value;
+	//feet   = document.getElementById("feet").value;
 	inches = document.getElementById("inches").value;
-	pounds = document.getElementById("pounds").value;
-	waist  = document.getElementById("waist").value;
-	years  = document.getElementById("years").value;
+	pounds = document.getElementById("current_weight").value;
+	waist  = document.getElementById("current_waist").value;
+	years  = document.getElementById("age").value;
 
-	feet   = parseFloat(feet);
+	//feet   = parseFloat(feet);
 	inches = parseFloat(inches);
 	pounds = parseFloat(pounds);
 	waist  = parseFloat(waist);
 	years  = parseFloat(years);
 
-	inches    = inches + 12 * feet;
+	//inches    = inches + 12 * feet;
 	meters    = 0.0254 * inches;
 	kilograms = 0.453592 * pounds;
 	BMI       = kilograms / (meters * meters);
@@ -88,6 +88,6 @@ function calculate() {
 
 	document.getElementById("bmi").value = BMI;
 	document.getElementById("bmr").value = BMR;
-	document.getElementById("bodyFat").value = bodyFatPercent;
+	document.getElementById("bodyfat").value = bodyFatPercent;
 } // calculate
 

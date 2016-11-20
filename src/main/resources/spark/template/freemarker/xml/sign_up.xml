@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subject>
+    <subject_id></subject_id>
+    <city></city>
+    <state></state>
+    <gender></gender>
+    <marital></marital>
+    <height></height>
+    <dob></dob>
+    <start_weight></start_weight>
+    <start_waist></start_waist>
+    <date_entry></date_entry>
+</subject>

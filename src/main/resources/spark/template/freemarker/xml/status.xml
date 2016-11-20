@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<subject>
+    <entry_id></entry_id>
+    <today></today>
+    <subject_id></subject_id>
+    <current_weight></current_weight>
+    <current_waist></current_waist>
+    <height></height>
+    <age></age>
+    <bmi></bmi>
+    <bmr></bmr>
+    <bodyfat></bodyfat>    
+</subject>

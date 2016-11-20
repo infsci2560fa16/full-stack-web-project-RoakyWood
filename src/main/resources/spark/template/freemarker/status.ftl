@@ -21,16 +21,16 @@
             <th colspan="2">Please enter data</th>
         </tr>
         <tr>
-            <td>Height:</td><td><input type="text" id="feet" />ft.<input type="text" id="inches" />in.</td>
+            <td>Height:</td><td><input type="text" id="inches" />in.</td>
         </tr>
         <tr>
-            <td>Weight:</td><td><input type="text" id="pounds" />lb.</td>
+            <td>Weight:</td><td><input type="text" id="current_weight" />lb.</td>
         </tr>
         <tr>
-            <td>Waist Size:</td><td><input type="text" id="waist" />in.</td>
+            <td>Waist Size:</td><td><input type="text" id="current_waist" />in.</td>
         </tr>
         <tr>
-            <td>Age:</td><td><input type="text" id="years" />years</td>
+            <td>Age:</td><td><input type="text" id="age" />years</td>
         </tr>
     </table>
 
@@ -44,7 +44,7 @@
         <td>BMR:</td><td><input type="text" id="bmr" /></td>
     </tr>
     <tr>
-        <td>Body Fat:</td><td><input type="text" id="bodyFat" /> %</td>
+        <td>Body Fat:</td><td><input type="text" id="bodyfat" /> %</td>
     </tr>
     </table>
 </form>
