@@ -32,11 +32,11 @@
                             </td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Marital_Status:</td>
+                            <td class="white_text">Marital Status:</td>
                             <td><input id="marital" type="text" name="Marital" value="Marital Status" onblur="appendTextm()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Height_in_Inches:</td>
+                            <td class="white_text">Height in Inches:</td>
                             <td><input id="height" type="text" name="Height" value="Height" onblur="appendTexth()"></td>
                         </tr>
                         <tr>
@@ -44,42 +44,45 @@
                             <td><input id="dob" type="text" name="DOB" value="Date of Birth" onblur="appendTextd()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">:</td>
-                            <td><input id="start_weight" type="text" name="Starting Weight" value="Race" onblur="appendTextr()"></td>
+                            <td class="white_text">Starting Weight:</td>
+                            <td><input id="start_weight" type="text" name="Starting Weight" value="Weight" onblur="appendTextswg()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">:</td>
-                            <td><input id="start_waist" type="text" name="Starting Waist" value="Nationality" onblur="appendTextn()"></td>
+                            <td class="white_text">Starting Waist:</td>
+                            <td><input id="start_waist" type="text" name="Starting Waist" value="Waist" onblur="appendTextsws()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">:</td>
-                            <td><input id="date_entry" type="text" name="Current Date" value="Nationality" onblur="appendTextn()"></td>
+                            <td class="white_text">Current Date:</td>
+                            <td><input id="current_date" type="text" name="Current Date" value="dateEntry()" onblur="appendTextcd()"></td>
                         </tr>
                     </table>
                     <table>
                         <tr>
-                            <td id="destino_gender" class="destino">You entered this data:</td>
+                            <td id="destino_city" class="destino">You entered this City:</td>
                         </tr>
                         <tr>
-                            <td id="destino_city" class="destino">You entered this data:</td>
+                            <td id="destino_state" class="destino">You entered this State:</td>
                         </tr>
                         <tr>
-                            <td id="destino_dob" class="destino">You entered this data:</td>
+                            <td id="destino_gender" class="destino">You entered this Gender:</td>
                         </tr>
                         <tr>
-                            <td id="destino_height" class="destino">You entered this data:</td>
+                            <td id="destino_marital" class="destino">You entered this Marital Status:</td>
                         </tr>
                         <tr>
-                            <td id="destino_state" class="destino">You entered this data:</td>
+                            <td id="destino_height" class="destino">You entered this Height:</td>
                         </tr>
                         <tr>
-                            <td id="destino_race" class="destino">You entered this data:</td>
+                            <td id="destino_dob" class="destino">You entered this DOB:</td>
                         </tr>
                         <tr>
-                            <td id="destino_nationality" class="destino">You entered this data:</td>
+                            <td id="destino_start_weight" class="destino">You entered this Start Weight:</td>
                         </tr>
                         <tr>
-                            <td id="destino_married" class="destino">You entered this data:</td>
+                            <td id="destino_start_waist" class="destino">You entered this Start Waist Size:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_date_entry" class="destino">Current Date:</td>
                         </tr>
                     </table>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
