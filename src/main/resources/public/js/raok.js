@@ -18,31 +18,31 @@ function closelio(){
 }
 
 function slick(){
-    location.href='sign_up.html';
+    location.href='sign_up.ftl';
 }
 
 function hlick(){
-    location.href='help.html';
+    location.href='help.ftl';
 }
 
 function thlick(){
-    location.href='thanx.html';
+    location.href='thanx.ftl';
 }
 
 function cdlick(){
-    location.href='confirm_data.html';
+    location.href='confirm_data.ftl';
 }
 
 function colick(){
-    location.href='congrats.html';
+    location.href='congrats.ftl';
 }
 
 function ilick(){
-    location.href='index.html';
+    location.href='index.ftl';
 }
 
 function stlick(){
-    location.href='status.html';
+    location.href='status.ftl';
 }
 
 function radio_value(){
