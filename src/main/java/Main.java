@@ -19,7 +19,7 @@ public class Main {
   public static void main(String[] args) {
 
     port(Integer.valueOf(System.getenv("PORT")));
-    staticFileLocation("/public");
+    staticFileLocation("/spark/template/freemarker");
 
     get("/hello", (req, res) -> "Does this even work?");
     get("/test", (req, res) -> "This is a test of the emergency broadcast system.");
@@ -33,7 +33,6 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "ack.ftl");
     }, new FreeMarkerEngine());
-
 
     get("/db", (req, res) -> {
       Connection connection = null;
