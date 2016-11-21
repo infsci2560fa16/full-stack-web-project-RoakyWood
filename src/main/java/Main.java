@@ -35,6 +35,26 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "help.ftl");
     }, new FreeMarkerEngine());
+    get("/confirm_data.ftl", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "confirm_data.ftl");
+    }, new FreeMarkerEngine());
+    get("/congrats.ftl", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "congrats.ftl");
+    }, new FreeMarkerEngine());
+    get("/sign_up.ftl", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "sign_up.ftl");
+    }, new FreeMarkerEngine());
+    get("/status.ftl", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "status.ftl");
+    }, new FreeMarkerEngine());
+    get("/thanx.ftl", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "thanx.ftl");
+    }, new FreeMarkerEngine()); 
     get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
