@@ -70,3 +70,10 @@ function dateEntry() {
     });
 }
 
+function page_insert(){
+    $(document).ready(function(){
+         $("#load-content").click(function(){
+            $("#content").load("sign_up.ftl"); // relative path as defined in main.java
+         });
+    });
+}
