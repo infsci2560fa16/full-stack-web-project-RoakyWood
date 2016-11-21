@@ -15,8 +15,11 @@
     transform: translate(-50%, -50%);
 }
 #bodlio{
-    background-color: mediumpurple;
+    background-color:darkblue;
     padding-top: 30px;
+}
+#navbar{
+    background-color:maroon;
 }
 .hipplio {
     background: maroon;
@@ -54,70 +57,58 @@
     vertical-align: middle;
     width: 400px;
 }
-
 .whitlio {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .white_text {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 #gold_legend {
     color: goldenrod;
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .big_gold_text {
     color: goldenrod;
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .white_url {
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .destino {
     color:goldenrod;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .footlio {
     border-style:double;
     border-color:goldenrod;
     border-width:5px;
 }
-
 .schlabel {
     background-color:white;
     border:5px;
     border-color:goldenrod;
 }
-
 .devo {
     background-color:black;
     padding:20px;
     display:none;
     width:50%;
 }
-
-.listo {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: goldenrod;
-}
-
 .hipplio:hover + .devo {
     display:block;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:16px;
     color:white;
 }
-
+.listo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: goldenrod;
+}
 nav {    
   width: 150px;
   float: left;
@@ -126,4 +117,3 @@ nav {
   padding: 0;
   margin-right: 10px;
 }
-

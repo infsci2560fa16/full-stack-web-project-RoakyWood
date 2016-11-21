@@ -22,18 +22,19 @@ public class Main {
     staticFileLocation("/spark/template/freemarker");
 
     get("/hello", (req, res) -> "Does this even work?");
-    get("/test", (req, res) -> "This is a test of the emergency broadcast system.");
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
-            attributes.put("message", "Hello World!");
             return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
     get("/ack.ftl", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "ack.ftl");
     }, new FreeMarkerEngine());
-
+    get("/help.ftl", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "help.ftl");
+    }, new FreeMarkerEngine());
     get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
