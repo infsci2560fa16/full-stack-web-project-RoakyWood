@@ -29,7 +29,10 @@ public class Main {
             attributes.put("message", "Hello World!");
             return new ModelAndView(attributes, "index.ftl");
     }, new FreeMarkerEngine());
-
+    get("/ack.ftl", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "ack.ftl");
+    }, new FreeMarkerEngine());
 
 
     get("/db", (req, res) -> {
