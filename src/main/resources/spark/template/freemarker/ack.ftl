@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<#include "header.ftl"> 
+    <#include "header.ftl">
 </head>
 <body id="bodlio">
     <#include "nav.ftl">

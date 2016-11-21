@@ -54,13 +54,6 @@
          </td>
        </tr>
   </table>
-    <footer class="footlio">
-        <p>
-            <input class="help_button" type = "button" onclick="hlick()" value="Click to Get Help">
-        </p>
-        <a href="index.ftl">
-            <img src="graphics/bact_logo.jpg" alt="Return to Home Page"/>
-        </a>
-    </footer>
+    <#include "footer.ftl">
 </body>
 </html>

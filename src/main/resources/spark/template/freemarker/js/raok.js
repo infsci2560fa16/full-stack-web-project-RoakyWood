@@ -38,7 +38,7 @@ function colick(){
 }
 
 function ilick(){
-    location.href='index.ftl';
+    location.href='/';
 }
 
 function stlick(){
