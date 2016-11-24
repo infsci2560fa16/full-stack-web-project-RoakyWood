@@ -78,18 +78,18 @@ function page_insert(){
     });
 }
 
-function agree_insert(){
+function ack_insert(){
     $(document).ready(function(){
-         $("#load-content").click(function(){
-            $("#content").load("ack.ftl"); // relative path as defined in main.java
+         $("#load-contenta").click(function(){
+            $("#contenta").load("ack.ftl"); // relative path as defined in main.java
          });
     });
 }
 
 function help_insert(){
     $(document).ready(function(){
-         $("#load-content").click(function(){
-            $("#content").load("help.ftl"); // relative path as defined in main.java
+         $("#load-contenth").click(function(){
+            $("#contenth").load("help.ftl"); // relative path as defined in main.java
          });
     });
 }
