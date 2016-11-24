@@ -78,10 +78,18 @@ function page_insert(){
     });
 }
 
-function page_insert(){
+function agree_insert(){
     $(document).ready(function(){
          $("#load-content").click(function(){
-            $("#content").load("sign_up.ftl"); // relative path as defined in main.java
+            $("#content").load("ack.ftl"); // relative path as defined in main.java
+         });
+    });
+}
+
+function help_insert(){
+    $(document).ready(function(){
+         $("#load-content").click(function(){
+            $("#content").load("help.ftl"); // relative path as defined in main.java
          });
     });
 }
