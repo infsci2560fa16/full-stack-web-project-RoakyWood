@@ -81,7 +81,7 @@ function page_insert(){
 function ack_insert(){
     $(document).ready(function(){
          $("#load-contenta").click(function(){
-            $("#contenta").load("ack.ftl"); // relative path as defined in main.java
+            $("#contenta").load("ack.ftl");
          });
     });
 }
@@ -89,7 +89,39 @@ function ack_insert(){
 function help_insert(){
     $(document).ready(function(){
          $("#load-contenth").click(function(){
-            $("#contenth").load("help.ftl"); // relative path as defined in main.java
+            $("#contenth").load("help.ftl");
+         });
+    });
+}
+
+function confirm_insert(){
+    $(document).ready(function(){
+         $("#load-contentc").click(function(){
+            $("#contentc").load("confirm_data.ftl");
+         });
+    });
+}
+
+function congrats_insert(){
+    $(document).ready(function(){
+         $("#load-contentg").click(function(){
+            $("#contentg").load("congrats.ftl");
+         });
+    });
+}
+
+function status_insert(){
+    $(document).ready(function(){
+         $("#load-contents").click(function(){
+            $("#contents").load("status.ftl");
+         });
+    });
+}
+
+function thanx_insert(){
+    $(document).ready(function(){
+         $("#load-contentx").click(function(){
+            $("#contentx").load("thanx.ftl");
          });
     });
 }

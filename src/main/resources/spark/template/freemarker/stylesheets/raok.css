@@ -7,7 +7,7 @@
     height: 10%;
     max-width: 100%;
     padding-bottom: 10px;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     width: 100%;
     position: relative;
@@ -20,6 +20,12 @@
 }
 #navbar{
     background-color:maroon;
+}
+#content{
+    position:relative;
+}
+#contenta{
+    position:relative;
 }
 .hipplio {
     background: maroon;
@@ -53,7 +59,7 @@
     padding-top: 30px;
     padding-bottom: 10px;
     position: relative;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     width: 400px;
 }
