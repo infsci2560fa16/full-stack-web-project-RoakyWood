@@ -20,6 +20,7 @@
 }
 #navbar{
     background-color:maroon;
+    text-align: left;
 }
 #content{
     position:relative;
@@ -116,8 +117,6 @@
     color: goldenrod;
 }
 nav {    
-  width: 75%;
-  float: left;
   display: inline;
   margin: 0;
   padding: 0;
