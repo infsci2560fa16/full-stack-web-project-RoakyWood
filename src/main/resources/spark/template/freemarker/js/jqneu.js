@@ -75,7 +75,7 @@ function page_insert(){
          $("#load-content").click(function(){
             $("#content").load("sign_up.ftl"); // relative path as defined in main.java
          });
-         $('#index_content').empty();
+         $('#index_content').remove();
     });
 }
 
