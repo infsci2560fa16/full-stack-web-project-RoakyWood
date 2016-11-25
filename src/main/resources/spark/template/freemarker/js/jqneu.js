@@ -72,6 +72,7 @@ function dateEntry() {
 
 function page_insert(){
     $(document).ready(function(){
+         $('#index_content').empty();
          $("#load-content").click(function(){
             $("#content").load("sign_up.ftl"); // relative path as defined in main.java
          });
