@@ -76,9 +76,6 @@ function page_insert(){
             $("#content").load("sign_up.ftl"); // relative path as defined in main.java
          });
     });
-    $(document).ready(function(){
-        $('#index-content').remove();
-    });
 }
 
 function ack_insert(){
