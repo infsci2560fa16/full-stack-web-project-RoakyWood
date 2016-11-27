@@ -81,7 +81,8 @@ function page_insert(){
 function ack_insert(){
     $(document).ready(function(){
          $("#load-contenta").click(function(){
-            $("#contenta").load("ack.ftl");
+            $("#index-content").empty();
+            $("#index-content").load("ack.ftl");
          });
     });
 }
