@@ -109,3 +109,8 @@ function thanx_insert(){
     $("#index-content").empty();
     $("#index-content").load("thanx.ftl");
 }
+
+function paramatus_insert(page){
+    $("#index-content").empty();
+    $("#index-content").load(page);
+}
