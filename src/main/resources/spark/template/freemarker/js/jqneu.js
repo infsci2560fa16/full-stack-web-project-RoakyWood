@@ -76,20 +76,13 @@ function page_insert(){
 }
 
 function ack_insert(){
-    $(document).ready(function(){
-         $("#load-contenta").click(function(){
-            $("#index-content").empty();
-            $("#index-content").load("ack.ftl");
-         });
-    });
+     $("#index-content").empty();
+     $("#index-content").load("ack.ftl");
 }
 
-function help_insert(){
-    $(document).ready(function(){
-         $("#load-contenth").click(function(){
-            $("#contenth").load("help.ftl");
-         });
-    });
+function index_insert(){
+    $("#index-content").empty();
+    $("#index-content").load("indeximus.ftl");
 }
 
 function confirm_insert(){
@@ -97,31 +90,22 @@ function confirm_insert(){
     $("#index-content").load("confirm_data.ftl");
 }
 
+function help_insert(){
+    $("#index-content").empty();
+    $("#index-content").load("help.ftl");
+}
+
 function congrats_insert(){
-    $(document).ready(function(){
-         $("#load-contentg").click(function(){
-            $("#contentg").load("congrats.ftl");
-         });
-    });
+    $("#index-content").empty();
+    $("#index-content").load("congrats.ftl");
 }
 
 function status_insert(){
-    $(document).ready(function(){
-         $("#load-contents").click(function(){
-            $("#contents").load("status.ftl");
-         });
-    });
+    $("#index-content").empty();
+    $("#index-content").load("status.ftl");
 }
 
 function thanx_insert(){
-    $(document).ready(function(){
-         $("#load-contentx").click(function(){
-            $("#contentx").load("thanx.ftl");
-         });
-    });
-}
-
-function index_insert(){
     $("#index-content").empty();
-    $("#index-content").load("indeximus.ftl");
+    $("#index-content").load("thanx.ftl");
 }
