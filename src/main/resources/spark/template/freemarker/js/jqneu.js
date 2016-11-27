@@ -93,11 +93,8 @@ function help_insert(){
 }
 
 function confirm_insert(){
-    $(document).ready(function(){
-         $("#load-contentc").click(function(){
-            $("#contentc").load("confirm_data.ftl");
-         });
-    });
+    $("#index-content").empty();
+    $("#index-content").load("confirm_data.ftl");
 }
 
 function congrats_insert(){
