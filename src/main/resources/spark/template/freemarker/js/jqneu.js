@@ -71,11 +71,8 @@ function dateEntry() {
 }
 
 function page_insert(){
-    $(document).ready(function(){
-         $("#load-content").click(function(){
-            $("#content").load("sign_up.ftl"); // relative path as defined in main.java
-         });
-    });
+    $("#index-content").empty();
+    $("#index-content").load("sign_up.ftl");
 }
 
 function ack_insert(){
@@ -128,6 +125,6 @@ function thanx_insert(){
 }
 
 function index_insert(){
-            $("#index-content").empty();
-            $("#index-content").load("indeximus.ftl");
+    $("#index-content").empty();
+    $("#index-content").load("indeximus.ftl");
 }
