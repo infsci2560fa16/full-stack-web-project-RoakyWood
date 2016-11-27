@@ -80,7 +80,7 @@
                     </table>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
                     <p><input type="submit" value="Confirm Data"></p>
-                    <p id="contentc"><input type="button" id="load-contentc" value="Click to Confirm Data" onclick="confirm_insert()" /></p>
+                    <p id="contentc"><input type="button" id="load-contentc" value="Click to Confirm Data" onclick="paramatus_insert('confirm_data.ftl')" /></p>
                   </fieldset>
                 </form>
          </td>

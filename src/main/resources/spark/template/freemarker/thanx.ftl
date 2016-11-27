@@ -4,5 +4,5 @@
     <p class="modifilio">You are doing Well!</p>
     <p id="contents"><input type="button" id="load-contents" value="Oops! - Change Entry Data" onclick="status_insert()" /></p>
     <p>
-        <input class = "help_button" type = "button" value="Click to Exit" onclick="paramatus_insert('indeximus.ftl')">
+        <input class = "help_button" type = "button" value="Click to Exit" onclick="paramatus_insert('indeximus.ftl')" />
     </p>

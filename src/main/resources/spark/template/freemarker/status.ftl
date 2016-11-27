@@ -37,7 +37,7 @@
                         </tr>
                     </table>
                 </form>
-                <p id="contentx"><input type="button" id="load-contentx" value="Click to Finish" onclick="thanx_insert()" /></p>
+                <p id="contentx"><input type="button" id="load-contentx" value="Click to Finish" onclick="paramatus_insert('thanx.ftl')" /></p>
             </td>
        </tr>
 </table>
