@@ -129,5 +129,5 @@ function thanx_insert(){
 
 function index_insert(){
             $("#index-content").empty();
-            $("#index-content").load("/");
+            $("#index-content").load("indeximus.ftl");
 }
