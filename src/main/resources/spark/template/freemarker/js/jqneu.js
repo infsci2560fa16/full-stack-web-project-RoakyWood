@@ -70,46 +70,6 @@ function dateEntry() {
     });
 }
 
-function page_insert(){
-    $("#index-content").empty();
-    $("#index-content").load("sign_up.ftl");
-}
-
-function ack_insert(){
-     $("#index-content").empty();
-     $("#index-content").load("ack.ftl");
-}
-
-function index_insert(){
-    $("#index-content").empty();
-    $("#index-content").load("indeximus.ftl");
-}
-
-function confirm_insert(){
-    $("#index-content").empty();
-    $("#index-content").load("confirm_data.ftl");
-}
-
-function help_insert(){
-    $("#index-content").empty();
-    $("#index-content").load("help.ftl");
-}
-
-function congrats_insert(){
-    $("#index-content").empty();
-    $("#index-content").load("congrats.ftl");
-}
-
-function status_insert(){
-    $("#index-content").empty();
-    $("#index-content").load("status.ftl");
-}
-
-function thanx_insert(){
-    $("#index-content").empty();
-    $("#index-content").load("thanx.ftl");
-}
-
 function paramatus_insert(page){
     $("#index-content").empty();
     $("#index-content").load(page);

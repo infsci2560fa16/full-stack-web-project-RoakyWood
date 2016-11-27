@@ -75,7 +75,7 @@ public class Main {
           */
 
           Statement stmts = connection.createStatement();
-          //stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Pittsburgh','PA','Male','M','75.5','1961-12-20','284','33.5','now()')");
+          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Washington','PA','Male','M','72','1991-11-08','165','32','now()')");
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
