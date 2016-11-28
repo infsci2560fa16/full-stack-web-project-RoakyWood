@@ -3,7 +3,7 @@
       <div class="devo">Please enter your personal data. You will not be identified by name.</div>
   <table>
       <tr>
-          <td>
+          <td> 
                 <form  id="signup_form" name="basic_info" method="post" onsubmit="forming();return false;">
                   <fieldset>
                         <p class="big_gold_text">Please enter data below</p>        
