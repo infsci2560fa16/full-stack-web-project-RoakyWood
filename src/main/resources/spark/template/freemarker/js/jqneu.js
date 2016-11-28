@@ -74,3 +74,17 @@ function paramatus_insert(page){
     $("#index-content").empty();
     $("#index-content").load(page);
 }
+
+function forming(){
+    $('#signup_form').submit(function() {
+        // get all the inputs into an array.
+        var $inputs = $('#signup_form :input');
+
+        // get an associative array of just the values.
+        var values = {};
+        $inputs.each(function() {
+            //values[this.name] = $(this).val();
+            Console.log($(this).val());
+        });
+    });
+}
