@@ -47,9 +47,19 @@ public class Main {
             outputs.add( "Starting Weight: " + rss.getDouble("start_weight"));
             outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
             outputs.add( "Starting Date: " + rss.getDate("date_entry"));
-          }
+           }
+
+          attributes.put("results", outputs);
+          return new ModelAndView(attributes, "db2.ftl");
+        } 
+        catch (Exception e) {
+          attributes.put("message", "There was an error: " + e);
+          return new ModelAndView(attributes, "error.ftl");
+        }  
+        finally {
+          if (connection != null) try{connection.close();} catch(SQLException e){}
         }
-    }
+    }, new FreeMarkerEngine());
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
