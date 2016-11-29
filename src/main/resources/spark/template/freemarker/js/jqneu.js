@@ -66,8 +66,8 @@ function appendTextcd() {
 function dateEntry() {
     $(document).ready(function(){
         var date = new Date();
-        alert((date.getFullYear()) + '-' + date.getMonth() + '-' +  date.getDate());
-        return date;
+        var dato = date.getFullYear() + '-' + date.getMonth() + '-' +  date.getDate();
+        return dato;
     });
 }
 
