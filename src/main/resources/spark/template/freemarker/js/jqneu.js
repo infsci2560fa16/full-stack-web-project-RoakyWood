@@ -84,7 +84,7 @@ function forming(){
         var valuesio = {};
         $inputsio.each(function() {
             //valuesio[this.name] = $(this).val();
-            console.log($(this).val());
+            $("#destino_date_entry").append(" " + $(this).val() + " ");
         });
     });
 }
