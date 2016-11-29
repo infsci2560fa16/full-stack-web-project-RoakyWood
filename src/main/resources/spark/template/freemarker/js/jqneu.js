@@ -78,12 +78,12 @@ function paramatus_insert(page){
 function forming(){
     $('#signup_form').submit(function() {
         // get all the inputs into an array.
-        var $inputs = $('#signup_form :input');
+        var $inputsio = $('#signup_form :input');
 
         // get an associative array of just the values.
-        var values = {};
-        $inputs.each(function() {
-            //values[this.name] = $(this).val();
+        var valuesio = {};
+        $inputsio.each(function() {
+            //valuesio[this.name] = $(this).val();
             console.log($(this).val());
         });
     });
