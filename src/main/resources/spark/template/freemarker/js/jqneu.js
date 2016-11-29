@@ -95,6 +95,4 @@ function forming(){
         });
         //$("#destino_state").append(" " + data + " ");
     });
-
-    });
 }
