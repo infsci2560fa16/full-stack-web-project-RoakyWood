@@ -89,9 +89,9 @@ function forming(){
             $("#destino_all").append(" " + $(this).val() + " ");
         });
 
-        var data = $('#state').val();
+        var state = $('#state').val();
         $.post("/state",function(data, status){
-            alert("State is: " + data);
+            alert("State is: " + state);
         });
         //$("#destino_state").append(" " + data + " ");
     });
