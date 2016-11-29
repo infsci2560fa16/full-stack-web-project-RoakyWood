@@ -84,8 +84,17 @@ function forming(){
         // get an associative array of just the values.
         var valuesio = {};
         $inputsio.each(function() {
-            //valuesio[this.name] = $(this).val();
+       
+        //valuesio[this.name] = $(this).val();
             $("#destino_all").append(" " + $(this).val() + " ");
         });
+
+        var data = $('#state').val();
+        $.post("/state",function(data, status){
+            alert("State is: " + data);
+        });
+        //$("#destino_state").append(" " + data + " ");
+    });
+
     });
 }
