@@ -75,7 +75,10 @@
                             <td id="destino_start_waist" class="destino">You entered this Start Waist Size:</td>
                         </tr>
                         <tr>
-                            <td id="destino_date_entry" class="destino">Current Date:</td>
+                            <td id="destino_date_entry" class="destino">You got this Current Date:</td>
+                        </tr>
+                        <tr>
+                            <td id="destino_all" class="destino">All entered data from Post Action:</td>
                         </tr>
                     </table>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>

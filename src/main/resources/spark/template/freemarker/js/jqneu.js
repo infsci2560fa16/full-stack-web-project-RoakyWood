@@ -65,8 +65,9 @@ function appendTextcd() {
 
 function dateEntry() {
     $(document).ready(function(){
-        var d = new Date();
-        return d;
+        var date = new Date();
+        alert((date.getFullYear()) + '-' + date.getMonth() + '-' +  date.getDate());
+        return date;
     });
 }
 
@@ -84,7 +85,7 @@ function forming(){
         var valuesio = {};
         $inputsio.each(function() {
             //valuesio[this.name] = $(this).val();
-            $("#destino_date_entry").append(" " + $(this).val() + " ");
+            $("#destino_all").append(" " + $(this).val() + " ");
         });
     });
 }
