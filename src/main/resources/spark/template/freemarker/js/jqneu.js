@@ -84,7 +84,7 @@ function forming(){
         var values = {};
         $inputs.each(function() {
             //values[this.name] = $(this).val();
-            Console.log($(this).val());
+            console.log($(this).val());
         });
     });
 }
