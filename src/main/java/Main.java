@@ -20,8 +20,34 @@ public class Main {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/spark/template/freemarker");
-
+    //does one at a time
     get("/hello", (req, res) -> "Does this even work?");
+    //Combines everything and sends
+    post("/state", (request, response) -> {
+      Connection connection = null;
+      Map<String, Object> attributes = new HashMap<>();
+        try {
+          connection = DatabaseUrl.extract().getConnection();
+
+          Statement stmts = connection.createStatement();
+          
+          //Use name from tag
+          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Washington','"+ request.queryParams("State"); +"','Male','M','74','1991-11-08','165','32','now()')");
+          ResultSet rss = stmts.executeQuery("SELECT * FROM subject");
+          ArrayList<String> outputs = new ArrayList<String>();
+          //Need to refresh
+          while (rss.next()) {
+            outputs.add( "Subject: " + rss.getInt("subject_id"));
+            outputs.add( "City: " + rss.getString("city"));
+            outputs.add( "State: " + rss.getString("state"));
+            outputs.add( "Gender: " + rss.getString("gender"));
+            outputs.add( "Marital: " + rss.getString("marital"));
+            outputs.add( "Height: " + rss.getDouble("height"));
+            outputs.add( "Date of Birth: " + rss.getDate("dob"));
+            outputs.add( "Starting Weight: " + rss.getDouble("start_weight"));
+            outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
+            outputs.add( "Starting Date: " + rss.getDate("date_entry"));
+    }
 
     get("/", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
