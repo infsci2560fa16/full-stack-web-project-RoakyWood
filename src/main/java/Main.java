@@ -47,6 +47,8 @@ public class Main {
             outputs.add( "Starting Weight: " + rss.getDouble("start_weight"));
             outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
             outputs.add( "Starting Date: " + rss.getDate("date_entry"));
+          }
+        }
     }
 
     get("/", (request, response) -> {
