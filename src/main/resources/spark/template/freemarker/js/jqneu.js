@@ -76,7 +76,7 @@ function paramatus_insert(page){
     $("#index-content").load(page);
 }
 
-/*function forming(){
+function forming(){
     $('#signup_form').submit(function() {
         // get all the inputs into an array.
         var $inputsio = $('#signup_form :input');
@@ -96,7 +96,7 @@ function paramatus_insert(page){
         //$("#destino_state").append(" " + data + " ");
     });
 }
-*/
+/*
 function forming(form){
     var url = form.attr("action");
     var formData = {};
@@ -107,3 +107,4 @@ function forming(form){
         alert(data);
     });
 }
+*/
