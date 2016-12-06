@@ -93,7 +93,7 @@ function paramatus_insert(page){
         $.post("/state",function(data, status){
             alert("State is: " + state);
         });
-        //$("#destino_state").append(" " + data + " ");
+        $("#destino_state").append(" " + data + " ");
     });
 }
 */
@@ -104,6 +104,7 @@ function forming(form){
         formData[node.name] = node.value;
     });
     $.post("/state", formData).done(function (data) {
+        $("#destino_state").append(" " + data + " ");
         alert(data);
     });
 }
