@@ -97,8 +97,8 @@ function forming(){
     });
 }
 */
-function forming(f){
-    //var f = $("#" + form);
+function forming(form){
+    var f = $("#" + form);
     var url = f.attr("action");
     var formData = {};
     $(f).find("input[name]").each(function (index, node) {
