@@ -76,7 +76,7 @@ function paramatus_insert(page){
     $("#index-content").load(page);
 }
 
-function forming(){
+/*function forming(){
     $('#signup_form').submit(function() {
         // get all the inputs into an array.
         var $inputsio = $('#signup_form :input');
@@ -94,5 +94,16 @@ function forming(){
             alert("State is: " + state);
         });
         //$("#destino_state").append(" " + data + " ");
+    });
+}
+*/
+function forming(form){
+    var url = form.attr("action");
+    var formData = {};
+    $(form).find("input[name]").each(function (index, node) {
+        formData[node.name] = node.value;
+    });
+    $.post("/state", formData).done(function (data) {
+        alert(data);
     });
 }
