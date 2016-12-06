@@ -4,7 +4,7 @@
   <table>
       <tr>
           <td> 
-                <form  id="signup_form" name="basic_info" method="post" onsubmit="forming('signup_form');return false;">
+                <form  id="signup_form" name="basic_info" method="post" action="/state" onsubmit="forming('signup_form');return false;">
                   <fieldset>
                         <p class="big_gold_text">Please enter data below</p>        
                     <table>
