@@ -32,7 +32,7 @@ public class Main {
           Statement stmts = connection.createStatement();
           
           //Use name from tag
-          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("City") + "','" + request.queryParams("State") + "','" + request.queryParams("gender") + "','" + request.queryParams("Marital") + "','" + request.queryParams("Height") + "','" + request.queryParams("DOB") + "','" + request.queryParams("Weight") + "','" + request.queryParams("Waist") + "','" + request.queryParams("Date") + "')");
+          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("City") + "','" + request.queryParams("State") + "','" + request.queryParams("gender") + "','M','74','1991-11-08','165','32','now()')");
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject");
           ArrayList<String> outputs = new ArrayList<String>();
           //Need to refresh
