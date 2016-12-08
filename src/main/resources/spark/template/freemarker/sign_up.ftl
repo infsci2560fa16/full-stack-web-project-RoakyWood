@@ -46,7 +46,7 @@
                         </tr>
                         <tr>                            
                             <td class="white_text">Current Date:</td>
-                            <td><input id="current_date" type="text" name="Current Date" value="dateEntry()" onblur="appendTextcd()"></td>
+                            <td><input id="current_date" type="text" name="Current Date" value="Date" onblur="appendTextcd()"></td>
                         </tr>
                     </table>
                     <table>
