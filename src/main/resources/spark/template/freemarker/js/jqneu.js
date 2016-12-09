@@ -57,10 +57,10 @@ function appendTextsws() {
 
 function appendTextcd() {
     $(document).ready(function(){
-        var d = new Date();
-        d = d.toISOString().substring(0, 10);
+        //var d = new Date();
+        //d = d.toISOString().substring(0, 10);
         var data = $('#current_date').val();
-        $("#destino_date_entry").append(" " + d + " ");
+        $("#destino_date_entry").append(" " + data + " ");
     });
 }
 

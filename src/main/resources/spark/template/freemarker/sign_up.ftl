@@ -46,7 +46,7 @@
                         </tr>
                         <tr>                            
                             <td class="white_text">Click for Current Date:</td>
-                            <td><input id="current_date" readonly="readonly" type="text" name="Current Date" value="Date" onsubmit="appendTextcd()"></td>
+                            <td><input id="current_date" readonly="readonly" type="text" name="Current Date" value="Date" onblur="appendTextcd()"></td>
                         </tr>
                     </table>
                     <table>
