@@ -87,4 +87,6 @@ function forming(form){
     $.post("/state", formData).done(function (data) {
         //alert(data);
     });
+    $("#index-content").empty();
+    $("#index-content").load('db.ftl');
 }
