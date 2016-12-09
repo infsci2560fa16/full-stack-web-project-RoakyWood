@@ -130,7 +130,7 @@ public class Main {
           }
 
           attributes.put("results", outputs);
-          return new ModelAndView(attributes, "db2.ftl");
+          return new ModelAndView(attributes, "db.ftl");
         } 
         catch (Exception e) {
           attributes.put("message", "There was an error: " + e);
