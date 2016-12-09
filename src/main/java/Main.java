@@ -114,7 +114,7 @@ public class Main {
 
           Statement stmts = connection.createStatement();
           //stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Washington','PA','Male','M','72','1991-11-08','165','32','now()')");
-          ResultSet rss = stmts.executeQuery("SELECT * FROM subject");
+          ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
             outputs.add( "Subject: " + rss.getInt("subject_id"));
