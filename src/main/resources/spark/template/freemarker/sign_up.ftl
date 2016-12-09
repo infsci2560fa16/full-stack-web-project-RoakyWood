@@ -45,8 +45,8 @@
                             <td><input id="start_waist" type="text" name="Starting Waist" value="Waist" onblur="appendTextsws()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Current Date:</td>
-                            <td><input id="current_date" type="text" name="Current Date" value="Date" onblur="appendTextcd()"></td>
+                            <td class="white_text">Click for Current Date:</td>
+                            <td><input id="current_date" readonly="readonly" type="text" name="Current Date" value="Date" onclick="appendTextcd()"></td>
                         </tr>
                     </table>
                     <table>
