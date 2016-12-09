@@ -77,9 +77,9 @@
                         <tr>
                             <td id="destino_date_entry" class="destino">You got this Current Date:</td>
                         </tr>
-                        <tr>
+                        <!--<tr>
                             <td id="destino_all" class="destino">All entered data from Post Action:</td>
-                        </tr>
+                        </tr>-->
                     </table>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
                     <p><input type="submit" value="Confirm Data"></p>
