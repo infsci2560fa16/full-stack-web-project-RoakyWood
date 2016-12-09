@@ -88,5 +88,5 @@ function forming(form){
         //alert(data);
     });
     $("#index-content").empty();
-    $("#index-content").load('db.ftl');
+    $("#index-content").load('db');
 }
