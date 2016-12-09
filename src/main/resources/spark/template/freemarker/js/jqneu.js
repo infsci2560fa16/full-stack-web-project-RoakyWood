@@ -76,28 +76,7 @@ function paramatus_insert(page){
     $("#index-content").empty();
     $("#index-content").load(page);
 }
-/*
-function forming(){
-    $('#signup_form').submit(function() {
-        // get all the inputs into an array.
-        var $inputsio = $('#signup_form :input');
 
-        // get an associative array of just the values.
-        var valuesio = {};
-        $inputsio.each(function() {
-       
-        //valuesio[this.name] = $(this).val();
-            $("#destino_all").append(" " + $(this).val() + " ");
-        });
-
-        var state = $('#state').val();
-        $.post("/state",function(data, status){
-            alert("State is: " + state);
-        });
-        //$("#destino_state").append(" " + data + " ");
-    });
-}
-*/
 function forming(form){
     var f = $("#" + form);
     var url = f.attr("action");
@@ -106,6 +85,6 @@ function forming(form){
         formData[node.name] = node.value;
     });
     $.post("/state", formData).done(function (data) {
-        alert(data);
+        //alert(data);
     });
 }
