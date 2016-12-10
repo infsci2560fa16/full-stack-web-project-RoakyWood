@@ -92,6 +92,8 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "thanx.ftl");
     }, new FreeMarkerEngine()); 
+    
+    
     get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
@@ -126,5 +128,44 @@ public class Main {
           if (connection != null) try{connection.close();} catch(SQLException e){}
         }
     }, new FreeMarkerEngine());
+
+    
+    get("/db2", (req, res) -> {
+      Connection connection = null;
+      Map<String, Object> attributes = new HashMap<>();
+        try {
+          connection = DatabaseUrl.extract().getConnection();
+
+          Statement stmts = connection.createStatement();
+          //stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Washington','PA','Male','M','72','1991-11-08','165','32','now()')");
+          ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
+          ArrayList<String> outputs = new ArrayList<String>();
+          while (rss.next()) {
+            outputs.add( "Subject: " + rss.getInt("subject_id"));
+            outputs.add( "City: " + rss.getString("city"));
+            outputs.add( "State: " + rss.getString("state"));
+            outputs.add( "Gender: " + rss.getString("gender"));
+            outputs.add( "Marital: " + rss.getString("marital"));
+            outputs.add( "Height: " + rss.getDouble("height"));
+            outputs.add( "Date of Birth: " + rss.getDate("dob"));
+            outputs.add( "Starting Weight: " + rss.getDouble("start_weight"));
+            outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
+            outputs.add( "Starting Date: " + rss.getDate("date_entry"));
+          }
+
+          attributes.put("results", outputs);
+          return new ModelAndView(attributes, "db.ftl");
+        } 
+        catch (Exception e) {
+          attributes.put("message", "There was an error: " + e);
+          return new ModelAndView(attributes, "error.ftl");
+        }  
+        finally {
+          if (connection != null) try{connection.close();} catch(SQLException e){}
+        }
+    }, new FreeMarkerEngine());
+
+
+
   }
 }
