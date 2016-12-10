@@ -92,8 +92,6 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "thanx.ftl");
     }, new FreeMarkerEngine()); 
-    
-    
     get("/db", (req, res) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();

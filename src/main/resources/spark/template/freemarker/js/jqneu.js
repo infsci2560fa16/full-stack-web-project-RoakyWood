@@ -84,5 +84,18 @@ function forming(form){
     $.post("/state", formData).done(function (data) {
     });
     $("#index-content").empty();
+    $("#index-content").load('db');
+}
+
+function norming(form){
+    var f = $("#" + form);
+    var url = f.attr("action");
+    var formData = {};
+    $(f).find("input[name]").each(function (index, node) {
+        formData[node.name] = node.value;
+    });
+    $.post("/status", formData).done(function (data) {
+    });
+    $("#index-content").empty();
     $("#index-content").load('db2');
 }
