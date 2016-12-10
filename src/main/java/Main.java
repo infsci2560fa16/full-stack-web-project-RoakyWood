@@ -31,7 +31,7 @@ public class Main {
           
           //Use name from tag
           stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("City") + "','" + request.queryParams("State") + "','" + request.queryParams("Gender") + "','" + request.queryParams("Marital") + "','" + request.queryParams("Height") + "','" + request.queryParams("DOB") + "','" + request.queryParams("Starting Weight") + "','" + request.queryParams("Starting Waist") + "','" + request.queryParams("Current Date") + "')");
-          Thread.sleep(2000);
+          Thread.sleep(5000);
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
           ArrayList<String> outputs = new ArrayList<String>();
           //Need to refresh
