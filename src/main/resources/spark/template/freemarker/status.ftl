@@ -4,36 +4,42 @@
   <table>
       <tr>
           <td>
-                <form name="status_form">
+                <form class="formio" name="status_form">
                     <p class="hipplio">We are Happy with your Commitment!</p>
                     <p class="big_gold_text">Key Progress Indicators</p>
                     <table class="schlabel">
                         <tr>
-                            <th colspan="2">Please enter data</th>
+                            <th class = "theo" colspan="2">Please enter data</th>
                         </tr>
                         <tr>
-                            <td>Height:</td><td><input type="text" id="inches" />in.</td>
+                            <td class="tdelio">Height:</td><td><input type="text" id="height" />in.</td>
                         </tr>
                         <tr>
-                            <td>Weight:</td><td><input type="text" id="current_weight" />lb.</td>
+                            <td class="tdelio">Weight:</td><td><input type="text" id="current_weight" />lb.</td>
                         </tr>
                         <tr>
-                            <td>Waist Size:</td><td><input type="text" id="current_waist" />in.</td>
+                            <td class="tdelio">Waist Size:</td><td><input type="text" id="current_waist" />in.</td>
                         </tr>
                         <tr>
-                            <td>Age:</td><td><input type="text" id="age" />years</td>
+                            <td class="tdelio">Age:</td><td><input type="text" id="age" />years</td>
+                        </tr>
+                        <tr>
+                            <td class="tdelio">Subject ID:</td><td><input type="text" id="subject_id" />ID</td>
+                        </tr>
+                        <tr>
+                            <td class="tdelio">Date:</td><td><input type="text" id="today" />date</td>
                         </tr>
                     </table>
                     <p><input type="button" id="go" onclick="calculate()" value="Click for Results"/></p>
                     <table class="schlabel">
                         <tr>
-                            <td>BMI:</td><td><input type="text" id="bmi" /></td>
+                            <td class="tdelio">BMI:</td><td><input type="text" id="bmi" /></td>
                         </tr>
                         <tr>
-                            <td>BMR:</td><td><input type="text" id="bmr" /></td>
+                            <td class="tdelio">BMR:</td><td><input type="text" id="bmr" /></td>
                         </tr>
                         <tr>
-                            <td>Body Fat:</td><td><input type="text" id="bodyfat" /> %</td>
+                            <td class="tdelio">Body Fat:</td><td><input type="text" id="bodyfat" /> %</td>
                         </tr>
                     </table>
                 </form>

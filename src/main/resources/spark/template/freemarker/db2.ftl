@@ -7,4 +7,4 @@
     </#list>
     </ul>
     <p class="modifilio">Time to enter your Daily Progress! We are very proud of you!</p>
-    <p id="contents"><input type="button" id="load-contents" value="Click to Enter Daily Progress" onclick="paramatus_insert('status.ftl')" /></p>
+    <p id="contents"><input type="button" id="load-contents" value="Click to Confirm Daily Progress" onclick="paramatus_insert('thanx.ftl')" /></p>

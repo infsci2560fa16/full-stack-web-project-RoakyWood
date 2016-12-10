@@ -56,26 +56,23 @@ var radios = document.getElementsByName('gender');
 }
 
 function calculate() {
-	var inches, feet, meters;
+	var height, feet, meters;
 	var pounds, kilograms;
 	var waist, years;
 	var factor1, factor2, leanBodyMass, bodyFatWeight;
 	var BMI, BMR, bodyFatPercent;
 
-	//feet   = document.getElementById("feet").value;
-	inches = document.getElementById("inches").value;
+	height = document.getElementById("height").value;
 	pounds = document.getElementById("current_weight").value;
 	waist  = document.getElementById("current_waist").value;
 	years  = document.getElementById("age").value;
 
-	//feet   = parseFloat(feet);
-	inches = parseFloat(inches);
+	height = parseFloat(height);
 	pounds = parseFloat(pounds);
 	waist  = parseFloat(waist);
 	years  = parseFloat(years);
 
-	//inches    = inches + 12 * feet;
-	meters    = 0.0254 * inches;
+	meters    = 0.0254 * height;
 	kilograms = 0.453592 * pounds;
 	BMI       = kilograms / (meters * meters);
 	BMR       = 66.5 + 13.75 * kilograms + 500.3 * meters - 6.755 * years;

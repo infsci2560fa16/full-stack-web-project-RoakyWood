@@ -87,15 +87,48 @@ function forming(form){
     $("#index-content").load('db');
 }
 
+/*
 function norming(form){
+	var inches, feet, meters;
+	var pounds, kilograms;
+	var waist, years;
+	var factor1, factor2, leanBodyMass, bodyFatWeight;
+	var BMI, BMR, bodyFatPercent;
+
+	inches = document.getElementById("inches").value;
+	pounds = document.getElementById("current_weight").value;
+	waist  = document.getElementById("current_waist").value;
+	years  = document.getElementById("age").value;
+
+	inches = parseFloat(inches);
+	pounds = parseFloat(pounds);
+	waist  = parseFloat(waist);
+	years  = parseFloat(years);
+
+	meters    = 0.0254 * inches;
+	kilograms = 0.453592 * pounds;
+	BMI       = kilograms / (meters * meters);
+	BMR       = 66.5 + 13.75 * kilograms + 500.3 * meters - 6.755 * years;
+
+	factor1   = 1.082 * pounds + 94.42;
+	factor2   = 4.15  * waist;
+	leanBodyMass   = factor1 - factor2;
+	bodyFatWeight  = pounds  - leanBodyMass;
+	bodyFatPercent = (100.0   * bodyFatWeight) / pounds;
+
+	document.getElementById("bmi").value = BMI;
+	document.getElementById("bmr").value = BMR;
+	document.getElementById("bodyfat").value = bodyFatPercent;
+
     var f = $("#" + form);
     var url = f.attr("action");
     var formData = {};
     $(f).find("input[name]").each(function (index, node) {
         formData[node.name] = node.value;
     });
-    $.post("/status", formData).done(function (data) {
+    $.post("/spqr", formData).done(function (data) {
     });
     $("#index-content").empty();
     $("#index-content").load('db2');
 }
+*/
