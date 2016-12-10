@@ -16,7 +16,7 @@ function appendTextg() {
     $(document).ready(function(){
         $("#destino_gender").empty();
         var data = $('input[name=gender]:checked').val();
-        $("#destino_gender").append("You entered this data: " + data);
+        $("#destino_gender").append(data);
     });
 }
 
@@ -85,7 +85,6 @@ function forming(form){
         formData[node.name] = node.value;
     });
     $.post("/state", formData).done(function (data) {
-        //alert(data);
     });
     $("#index-content").empty();
     $("#index-content").load('db');

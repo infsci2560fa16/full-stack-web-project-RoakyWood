@@ -20,8 +20,6 @@ public class Main {
 
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/spark/template/freemarker");
-    //does one at a time
-    get("/hello", (req, res) -> "Does this even work?");
     //Combines everything and sends
     post("/state", (request, response) -> {
       Connection connection = null;
@@ -32,7 +30,7 @@ public class Main {
           Statement stmts = connection.createStatement();
           
           //Use name from tag
-          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("City") + "','" + request.queryParams("State") + "','" + request.queryParams("gender") + "','" + request.queryParams("Marital") + "','" + request.queryParams("Height") + "','" + request.queryParams("DOB") + "','" + request.queryParams("Starting Weight") + "','" + request.queryParams("Starting Waist") + "','" + request.queryParams("Current Date") + "')");
+          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("City") + "','" + request.queryParams("State") + "','" + request.queryParams("gendero") + "','" + request.queryParams("Marital") + "','" + request.queryParams("Height") + "','" + request.queryParams("DOB") + "','" + request.queryParams("Starting Weight") + "','" + request.queryParams("Starting Waist") + "','" + request.queryParams("Current Date") + "')");
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
           ArrayList<String> outputs = new ArrayList<String>();
           //Need to refresh
@@ -98,19 +96,6 @@ public class Main {
       Map<String, Object> attributes = new HashMap<>();
         try {
           connection = DatabaseUrl.extract().getConnection();
-
-          /*Statement stmt = connection.createStatement();
-          stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
-          stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-          ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
-          ArrayList<String> output = new ArrayList<String>();
-          while (rs.next()) {
-            output.add( "Read from DB: " + rs.getTimestamp("tick"));
-          }
-
-          attributes.put("results", output);
-          return new ModelAndView(attributes, "db.ftl");
-          */
 
           Statement stmts = connection.createStatement();
           //stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Washington','PA','Male','M','72','1991-11-08','165','32','now()')");

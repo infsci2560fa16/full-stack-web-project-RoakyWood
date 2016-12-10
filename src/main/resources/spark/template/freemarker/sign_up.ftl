@@ -57,7 +57,7 @@
                             <td id="destino_state" class="destino">You entered this State:</td>
                         </tr>
                         <tr>
-                            <td id="destino_gender" class="destino">You entered this Gender:</td>
+                            <td id="destino_gender" class="destino" name="gendero"></td>
                         </tr>
                         <tr>
                             <td id="destino_marital" class="destino">You entered this Marital Status:</td>
