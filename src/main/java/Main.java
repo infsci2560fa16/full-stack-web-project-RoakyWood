@@ -34,7 +34,7 @@ public class Main {
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
           ArrayList<String> outputs = new ArrayList<String>();
           //Need to refresh
-          while (rss.next()) {
+          /*while (rss.next()) {
             outputs.add( "Subject: " + rss.getInt("subject_id"));
             outputs.add( "City: " + rss.getString("city"));
             outputs.add( "State: " + rss.getString("state"));
@@ -49,6 +49,7 @@ public class Main {
 
           attributes.put("results", outputs);
           return new ModelAndView(attributes, "db2.ftl");
+          */
         } 
         catch (Exception e) {
           attributes.put("message", "There was an error: " + e);
