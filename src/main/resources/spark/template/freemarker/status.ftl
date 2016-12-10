@@ -4,7 +4,7 @@
   <table>
       <tr>
           <td>
-                <form name="status_form">
+                <form class="formio" name="status_form">
                     <p class="hipplio">We are Happy with your Commitment!</p>
                     <p class="big_gold_text">Key Progress Indicators</p>
                     <table class="schlabel">
