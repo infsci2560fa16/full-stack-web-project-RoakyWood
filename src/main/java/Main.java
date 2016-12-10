@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Map;
-//import java.io;
+
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -46,6 +46,7 @@ public class Main {
             outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
             outputs.add( "Starting Date: " + rss.getDate("date_entry"));
            }
+
           attributes.put("results", outputs);
           return new ModelAndView(attributes, "db.ftl");
         } 
@@ -95,7 +96,9 @@ public class Main {
       Map<String, Object> attributes = new HashMap<>();
         try {
           connection = DatabaseUrl.extract().getConnection();
+
           Statement stmts = connection.createStatement();
+          //stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Washington','PA','Male','M','72','1991-11-08','165','32','now()')");
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
@@ -110,6 +113,7 @@ public class Main {
             outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
             outputs.add( "Starting Date: " + rss.getDate("date_entry"));
           }
+
           attributes.put("results", outputs);
           return new ModelAndView(attributes, "db.ftl");
         } 
