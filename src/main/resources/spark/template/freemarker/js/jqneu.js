@@ -15,8 +15,9 @@ function appendTexts() {
 function appendTextg() {
     $(document).ready(function(){
         $("#destino_gender").empty();
-        var data = $('input[name=gender]:checked').val();
-        $("#destino_gender").append(data);
+        var data = $('#gender').val();
+        //var data = $('input[name=gender]:checked').val();
+        $("#destino_gender").append(" " + data + " ");
     });
 }
 
@@ -57,8 +58,6 @@ function appendTextsws() {
 
 function appendTextcd() {
     $(document).ready(function(){
-        //var d = new Date();
-        //d = d.toISOString().substring(0, 10);
         var data = $('#current_date').val();
         $("#destino_date_entry").append(" " + data + " ");
     });

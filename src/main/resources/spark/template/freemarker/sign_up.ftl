@@ -18,11 +18,7 @@
                         </tr>
                         <tr>
                             <td class="white_text">Gender:</td>
-                            <td> 
-                                <p><input type="radio" name="gender" value="Male" onclick="appendTextg()">Male</p>
-                                <p><input type="radio" name="gender" value="Female" onclick="appendTextg()">Female</p>
-                                <p><input type="radio" name="gender" value="Bowie" onclick="appendTextg()">Bowie</p>
-                            </td>
+                            <td><input id="gender" type="text" name="Gender" value="Gender" onblur="appendTextg()"></td>
                         </tr>
                         <tr>                            
                             <td class="white_text">Marital Status:</td>
@@ -57,7 +53,7 @@
                             <td id="destino_state" class="destino">You entered this State:</td>
                         </tr>
                         <tr>
-                            <td id="destino_gender" class="destino" name="gendero"></td>
+                            <td id="destino_gender" class="destino">You entered this Gender:</td>
                         </tr>
                         <tr>
                             <td id="destino_marital" class="destino">You entered this Marital Status:</td>
@@ -77,9 +73,6 @@
                         <tr>
                             <td id="destino_date_entry" class="destino">Current Date:</td>
                         </tr>
-                        <!--<tr>
-                            <td id="destino_all" class="destino">All entered data from Post Action:</td>
-                        </tr>-->
                     </table>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
                     <p><input type="submit" value="Confirm Data"></p>

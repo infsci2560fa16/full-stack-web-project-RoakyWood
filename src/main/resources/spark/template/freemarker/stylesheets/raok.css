@@ -122,3 +122,8 @@ nav {
   padding: 0;
   margin-right: 10px;
 }
+li {
+    color: white;
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
