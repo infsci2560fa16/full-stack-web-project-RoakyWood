@@ -84,5 +84,5 @@ function forming(form){
     $.post("/state", formData).done(function (data) {
     });
     $("#index-content").empty();
-    $("#index-content").wait(3000).load('db');
+    $("#index-content").load('db');
 }
