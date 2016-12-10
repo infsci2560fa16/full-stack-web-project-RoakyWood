@@ -96,8 +96,8 @@
     border-width:5px;
 }
 .schlabel {
-    background-color:white;
-    border:5px;
+    background-color:maroon;
+    border:12px;
     border-color:goldenrod;
 }
 .devo {
@@ -124,6 +124,16 @@ nav {
 }
 li {
     color: white;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+th {
+    color:goldenrod;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+td {
+    color: goldenrod;
     font-size: 24px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
