@@ -2,7 +2,7 @@ import java.sql.*;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Map;
-
+import java.io;
 import java.net.URI;
 import java.net.URISyntaxException;
 
@@ -31,10 +31,11 @@ public class Main {
           
           //Use name from tag
           stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("City") + "','" + request.queryParams("State") + "','" + request.queryParams("Gender") + "','" + request.queryParams("Marital") + "','" + request.queryParams("Height") + "','" + request.queryParams("DOB") + "','" + request.queryParams("Starting Weight") + "','" + request.queryParams("Starting Waist") + "','" + request.queryParams("Current Date") + "')");
+          Thread.sleep(2000);
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
           ArrayList<String> outputs = new ArrayList<String>();
           //Need to refresh
-          /*while (rss.next()) {
+          while (rss.next()) {
             outputs.add( "Subject: " + rss.getInt("subject_id"));
             outputs.add( "City: " + rss.getString("city"));
             outputs.add( "State: " + rss.getString("state"));
@@ -46,10 +47,8 @@ public class Main {
             outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
             outputs.add( "Starting Date: " + rss.getDate("date_entry"));
            }
-
           attributes.put("results", outputs);
-          return new ModelAndView(attributes, "db2.ftl");
-          */
+          return new ModelAndView(attributes, "db.ftl");
         } 
         catch (Exception e) {
           attributes.put("message", "There was an error: " + e);
@@ -97,9 +96,7 @@ public class Main {
       Map<String, Object> attributes = new HashMap<>();
         try {
           connection = DatabaseUrl.extract().getConnection();
-
           Statement stmts = connection.createStatement();
-          //stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'Washington','PA','Male','M','72','1991-11-08','165','32','now()')");
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
@@ -114,7 +111,6 @@ public class Main {
             outputs.add( "Starting Waist: " + rss.getDouble("start_waist"));
             outputs.add( "Starting Date: " + rss.getDate("date_entry"));
           }
-
           attributes.put("results", outputs);
           return new ModelAndView(attributes, "db.ftl");
         } 
