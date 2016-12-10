@@ -14,9 +14,7 @@ function appendTexts() {
 
 function appendTextg() {
     $(document).ready(function(){
-        $("#destino_gender").empty();
         var data = $('#gender').val();
-        //var data = $('input[name=gender]:checked').val();
         $("#destino_gender").append(" " + data + " ");
     });
 }
