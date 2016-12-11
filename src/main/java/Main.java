@@ -130,12 +130,13 @@ public class Main {
         try {
           connection = DatabaseUrl.extract().getConnection();
           Statement stmts = connection.createStatement();
-          stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("Subject ID") + "','" + request.queryParams("Today") + "','" + request.queryParams("Current Weight") + "','" + request.queryParams("Current Waist") + "','" + request.queryParams("Current Height") + "','" + request.queryParams("Age") + "',)");
+          stmts.executeUpdate("INSERT INTO progress VALUES (DEFAULT,'" + request.queryParams("Today") + "','" + request.queryParams("Subject ID") + "','" + request.queryParams("Current Weight") + "','" + request.queryParams("Current Waist") + "','" + request.queryParams("Current Height") + "','" + request.queryParams("Age") + "')");
           stmts.executeUpdate("COMMIT");
           ResultSet rss = stmts.executeQuery("SELECT * FROM progress WHERE entry_id = (SELECT MAX(entry_id) FROM progress)");
           ArrayList<String> outputs = new ArrayList<String>();
           
           while (rss.next()) {
+              outputs.add( "Entry ID: " + rss.getInt("entry_id"));
               outputs.add( "Subject ID: " + rss.getInt("subject_id"));
               outputs.add( "Date Entered: " + rss.getDate("today"));
               outputs.add( "Current Weight: " + rss.getDouble("current_weight"));
@@ -164,6 +165,7 @@ public class Main {
           ResultSet rss = stmts.executeQuery("SELECT * FROM progress WHERE entry_id = (SELECT MAX(entry_id) FROM progress)");
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
+              outputs.add( "Entry ID: " + rss.getInt("entry_id"));
               outputs.add( "Subject ID: " + rss.getInt("subject_id"));
               outputs.add( "Date Entered: " + rss.getDate("today"));
               outputs.add( "Current Weight: " + rss.getDouble("current_weight"));
