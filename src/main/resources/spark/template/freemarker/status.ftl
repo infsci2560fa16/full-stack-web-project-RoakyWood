@@ -51,7 +51,7 @@
                             <td><input type="text" id="bodyfat" />%</td>
                         </tr>
                     </table>
-                    <p><input type="button" id="go" onclick="calculate()" value="Click for Results"/></p>
+                    <p><input type="submit" id="go" onclick="calculate()" value="Click for Results"/></p>
                 </form>
             </td>
        </tr>
