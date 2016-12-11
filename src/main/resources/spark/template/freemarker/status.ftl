@@ -51,7 +51,8 @@
                             <td class="tdelio"><input type="text" id="bodyfat" />%</td>
                         </tr>
                     </table>
-                    <p><input type="submit" id="go" onclick="calculate()" value="Click for Results"/></p>
+                    <p><input type="button" id="go" value="1. Click for Results" onclick="calculate()" /></p>
+                    <p><input type="submit" id="gogo" value="2. Click to Submit Data"/></p>
                 </form>
             </td>
        </tr>
