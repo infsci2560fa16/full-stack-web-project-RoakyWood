@@ -9,46 +9,46 @@
                     <p class="big_gold_text">Key Progress Indicators</p>
                     <table class="schlabel">
                         <tr>
-                            <th class="theo" colspan="2">Please enter data</th>
+                            <th class="theo" colspan="2">Please Enter Data in the Pattern Indicated</th>
                         </tr>
                         <tr>
-                            <td class="tdelio">Subject ID:</td>
-                            <td><input type="text" name="Subject ID" id="subject_id" />ID</td>
+                            <td class="tdelio">Subject ID: Up to Three Numbers -- 117</td>
+                            <td class="tdelio"><input type="text" name="Subject ID"  maxlength="3" id="subject_id" />ID</td>
                         </tr>
                         <tr>
-                            <td class="tdelio">Date:</td>
-                            <td><input type="text" name="Today" id="today" />date</td>
+                            <td class="tdelio">Today's Date: YYYY-MM-DD -- 2016-12-11</td>
+                            <td class="tdelio"><input type="text" name="Today" id="today" />date</td>
                         </tr>
                         <tr>
-                            <td class="tdelio">Weight:</td>
-                            <td><input type="text" name="Current Weight" id="current_weight" />lb.</td>
+                            <td class="tdelio">Weight: Up to Six Characters -- 198.75</td>
+                            <td class="tdelio"><input type="text" name="Current Weight" maxlength="6" id="current_weight" />lb.</td>
                         </tr>
                         <tr>
-                            <td class="tdelio">Waist Size:</td>
-                            <td><input type="text" name="Current Waist" id="current_waist" />in.</td>
+                            <td class="tdelio">Waist Size: Five Characters -- 38.50</td>
+                            <td class="tdelio"><input type="text" name="Current Waist" maxlength="5" id="current_waist" />in.</td>
                         </tr>
                         <tr>
-                            <td class="tdelio">Height:</td>
-                            <td><input type="text" name="Current Height" id="height" />in.</td>
+                            <td class="tdelio">Height in Inches: Five Characters -- 68.25</td>
+                            <td class="tdelio"><input type="text" name="Current Height" maxlength="5" id="height" />in.</td>
                         </tr>
                         <tr>
-                            <td class="tdelio">Age:</td>
-                            <td><input type="text" name="Age" id="age" />years</td>
+                            <td class="tdelio">Age: Two Numbers -- 36</td>
+                            <td class="tdelio"><input type="text" name="Age" maxlength="5" id="age" />years</td>
                         </tr>
                     </table>
                     <p class="big_gold_text">Click Below for Results</p>
                     <table class="schlabel">
                         <tr>
                             <td class="tdelio">BMI:</td>
-                            <td><input type="text" id="bmi" /></td>
+                            <td class="tdelio"><input type="text" id="bmi" /></td>
                         </tr>
                         <tr>
                             <td class="tdelio">BMR:</td>
-                            <td><input type="text" id="bmr" /></td>
+                            <td class="tdelio"><input type="text" id="bmr" /></td>
                         </tr>
                         <tr>
                             <td class="tdelio">Body Fat:</td>
-                            <td><input type="text" id="bodyfat" />%</td>
+                            <td class="tdelio"><input type="text" id="bodyfat" />%</td>
                         </tr>
                     </table>
                     <p><input type="submit" id="go" onclick="calculate()" value="Click for Results"/></p>

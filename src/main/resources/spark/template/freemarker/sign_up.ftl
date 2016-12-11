@@ -42,7 +42,7 @@
                             <td><input id="start_waist" type="text" name="Starting Waist" value="Waist" maxlength="5" onblur="appendTextsws()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Today's Date: YYYY-MM-DD -- 1990-12-01</td>
+                            <td class="white_text">Today's Date: YYYY-MM-DD -- 2016-12-11</td>
                             <td><input id="current_date" type="text" name="Current Date" value="Date" onblur="appendTextcd()"></td>
                         </tr>
                     </table>
