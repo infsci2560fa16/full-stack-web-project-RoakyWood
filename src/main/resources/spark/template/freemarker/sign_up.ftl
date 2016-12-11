@@ -4,44 +4,45 @@
   <table>
       <tr>
           <td> 
+                <!-- This is the Form for Entering initial data on signup. Each field has a JavaScript onblur to allow you to see your entries It has a form action that submits the form data to the database.-->
                 <form  id="signup_form" name="basic_info" method="post" action="/state" onsubmit="forming('signup_form');return false;">
                   <fieldset>
-                        <p class="big_gold_text">Please enter data below</p>        
+                        <p class="big_gold_text">Please enter data below in the pattern indicated</p>        
                     <table>
                         <tr>                
-                            <td class="white_text">City:</td>
-                            <td><input id="city" type="text" name="City" value="City" onblur="appendTextc()"></td>
+                            <td class="white_text">City: Up to 36 characters</td>
+                            <td><input id="city" type="text" name="City" value="City" maxlength="36" onblur="appendTextc()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">State:</td>
-                            <td><input id="state" type="text" name="State" value="State" onblur="appendTexts()"></td>
+                            <td class="white_text">State: Two characters -- PA</td>
+                            <td><input id="state" type="text" name="State" value="State" maxlength="2" onblur="appendTexts()"></td>
                         </tr>
                         <tr>
-                            <td class="white_text">Gender:</td>
-                            <td><input id="gender" type="text" name="Gender" value="Gender" onblur="appendTextg()"></td>
+                            <td class="white_text">Gender: Six characters -- Male, Female, Other</td>
+                            <td><input id="gender" type="text" name="Gender" value="Gender" maxlength="6" onblur="appendTextg()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Marital Status:</td>
-                            <td><input id="marital" type="text" name="Marital" value="Marital Status" onblur="appendTextm()"></td>
+                            <td class="white_text">Marital Status: One Character -- M, S, D, W, O</td>
+                            <td><input id="marital" type="text" name="Marital" value="Marital Status" maxlength="1" onblur="appendTextm()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Height in Inches:</td>
-                            <td><input id="height" type="text" name="Height" value="Height" onblur="appendTexth()"></td>
+                            <td class="white_text">Height in Inches: Five Characters -- 68.25</td>
+                            <td><input id="height" type="text" name="Height" value="Height" maxlength="5" onblur="appendTexth()"></td>
                         </tr>
                         <tr>
-                            <td class="white_text">DOB:</td>
+                            <td class="white_text">DOB: YYYY-MM-DD -- 1990-12-01</td>
                             <td><input id="dob" type="text" name="DOB" value="Date of Birth" onblur="appendTextd()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Starting Weight:</td>
-                            <td><input id="start_weight" type="text" name="Starting Weight" value="Weight" onblur="appendTextswg()"></td>
+                            <td class="white_text">Starting Weight: Up to Six Characters -- 198.75</td>
+                            <td><input id="start_weight" type="text" name="Starting Weight" value="Weight" maxlength="6" onblur="appendTextswg()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Starting Waist:</td>
-                            <td><input id="start_waist" type="text" name="Starting Waist" value="Waist" onblur="appendTextsws()"></td>
+                            <td class="white_text">Starting Waist: Five Characters -- 38.50</td>
+                            <td><input id="start_waist" type="text" name="Starting Waist" value="Waist" maxlength="5" onblur="appendTextsws()"></td>
                         </tr>
                         <tr>                            
-                            <td class="white_text">Click for Current Date:</td>
+                            <td class="white_text">Today's Date: YYYY-MM-DD -- 1990-12-01</td>
                             <td><input id="current_date" type="text" name="Current Date" value="Date" onblur="appendTextcd()"></td>
                         </tr>
                     </table>
@@ -71,7 +72,7 @@
                             <td id="destino_start_waist" class="destino">You entered this Start Waist Size:</td>
                         </tr>
                         <tr>
-                            <td id="destino_date_entry" class="destino">Current Date:</td>
+                            <td id="destino_date_entry" class="destino">You Entered Current Date:</td>
                         </tr>
                     </table>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
