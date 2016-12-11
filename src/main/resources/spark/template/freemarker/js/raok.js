@@ -55,6 +55,11 @@ var radios = document.getElementsByName('gender');
     }
 }
 
+function timey() { 
+	var my_time = new Date();
+	alert(my_time); 
+}
+
 function calculate() {
 	var height, feet, meters;
 	var pounds, kilograms;

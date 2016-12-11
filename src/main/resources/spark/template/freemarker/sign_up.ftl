@@ -75,8 +75,9 @@
                             <td id="destino_date_entry" class="destino">You Entered Current Date:</td>
                         </tr>
                     </table>
+                    <p><input type="button" id="go" value="1. Check the Date" onclick="timey()" /></p>
                     <p class="whitlio">Click the "Confirm Data" button to enter data and sign up for the Clinical Trial</p>
-                    <p><input type="submit" value="Confirm Data"></p>
+                    <p><input type="submit" value="2. Confirm Data"></p>
                   </fieldset>
                 </form>
          </td>
