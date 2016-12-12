@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<!-- definition of user-defined simple elements -->
+	<xs:simpleType name="state">
+		<xs:restriction base="xs:string">
+			<xs:length value="2"/>
+			<xs:pattern value="[A-Z][A-Z]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- definition of simple elements -->
+	<xs:element name="city" type="xs:string"/>
+	<xs:element name="gender" type="xs:string"/>
+	<xs:element name="marital" type="xs:string"/>
+	<xs:element name="height" type="xs:double"/>
+	<xs:element name="dob" type="xs:date"/>
+	<xs:element name="startingweight" type="xs:double"/>
+	<xs:element name="startingwaist" type="xs:double"/>
+	<xs:element name="currentdate" type="xs:date"/>
+	<!-- definition of attributes -->
+	<xs:attribute name="subjectid" type="xs:string"/>
+	<!-- definition of complex elements -->
+	<xs:element name="subject">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="city"/>
+				<xs:element ref="state"/>
+				<xs:element ref="gender"/>
+				<xs:element ref="marital"/>
+				<xs:element ref="height"/>
+				<xs:element ref="dob"/>
+				<xs:element ref="startingweight"/>
+				<xs:element ref="startingwaist"/>
+				<xs:element ref="currentdate"/>
+				<xs:attribute ref="subjectid" use="required"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+<!--
+Elliott Levenson
+INFSCI 2560
+December 12, 2016
+bact.xsd
+Schema Defintion File
+Code based on example on http://www.w3schools.com/xml/schema_example.asp
+-->
