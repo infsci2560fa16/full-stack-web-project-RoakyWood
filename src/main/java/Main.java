@@ -52,7 +52,10 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "thanx.ftl");
     }, new FreeMarkerEngine()); 
-
+    get("/xml/bact.xml", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "/xml/bact.xml");
+    }, new FreeMarkerEngine()); 
     post("/state", (request, response) -> {
       Connection connection = null;
       Map<String, Object> attributes = new HashMap<>();
