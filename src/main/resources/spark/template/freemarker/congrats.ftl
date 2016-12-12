@@ -12,3 +12,4 @@ This is the BACT ftl Congratulations page
 <div class="devo">You can review your progress at any time.</div>
 <p class="modifilio">Time to enter your Daily Progress! We are very proud of you!</p>
 <p id="contents"><input type="button" id="load-contents" value="Click to Complete Sign-Up" onclick="paramatus_insert('status.ftl')" /></p>
+<p><input class = "xml_button" type = "button" value="Click for Status in XML" onclick="paramatus_insert('/xml/bact.xml')" /></p>
