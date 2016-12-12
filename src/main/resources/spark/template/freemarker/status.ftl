@@ -42,7 +42,7 @@ This is the BACT ftl Status Entry page
                         </tr>
                         <tr>
                             <td class="tdelio">Age: Two Numbers -- 36</td>
-                            <td class="tdelio"><input type="text" name="Age" maxlength="5" id="age" />years</td>
+                            <td class="tdelio"><input type="text" pattern ="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))" name="Age" maxlength="5" id="age" />years</td>
                         </tr>
                     </table>
                     <p class="big_gold_text">Click Below for Results</p>
