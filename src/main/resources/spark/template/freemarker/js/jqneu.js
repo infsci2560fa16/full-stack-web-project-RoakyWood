@@ -85,7 +85,6 @@ function forming(form){
     });
     $("#index-content").empty();
     $("#index-content").load('db');
-    document.location.reload();
 }
 
 function norming(form){
