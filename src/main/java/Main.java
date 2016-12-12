@@ -13,7 +13,6 @@ import static spark.Spark.get;
 
 import com.heroku.sdk.jdbc.DatabaseUrl;
 
-//This is a test
 public class Main {
 
   public static void main(String[] args) {
