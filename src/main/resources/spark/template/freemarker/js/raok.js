@@ -47,6 +47,10 @@ function calculate() {
 	bodyFatWeight  = pounds  - leanBodyMass;
 	bodyFatPercent = (100.0   * bodyFatWeight) / pounds;
 
+	bodyFatPercent = bodyFatPercent.toFixed(2); 
+	BMI = BMI.toFixed(2);
+	BMR = BMR.toFixed(2);
+
 	document.getElementById("bmi").value = BMI;
 	document.getElementById("bmr").value = BMR;
 	document.getElementById("bodyfat").value = bodyFatPercent;
