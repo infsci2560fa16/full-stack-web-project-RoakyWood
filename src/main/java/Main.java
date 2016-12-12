@@ -83,7 +83,7 @@ public class Main {
           connection = DatabaseUrl.extract().getConnection();
           Statement stmts = connection.createStatement();
           //ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
-          stmts.executeUpdate("SELECT pg_sleep(3)");
+          
           ResultSet rss = stmts.executeQuery("SELECT * FROM subject ORDER BY subject_id DESC LIMIT 1");
           
           ArrayList<String> outputs = new ArrayList<String>();
