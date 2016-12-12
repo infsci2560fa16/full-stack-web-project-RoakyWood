@@ -1,3 +1,10 @@
+//Elliott Levenson
+//INFOSCI 2560
+//December 12, 2016
+//jqneu.js
+//This is a file of Javascripts using the jQuery Library
+
+//Functions to move field values to allow the user to view what they entered
 function appendTextc() {
     $(document).ready(function(){
         var data = $('#city').val();
@@ -69,11 +76,13 @@ function dateEntry() {
     });
 }
 
+//This function allows the insert of the current ftl page between the header, foot and nav ftl pages
 function paramatus_insert(page){
     $("#index-content").empty();
     $("#index-content").load(page);
 }
 
+//This is the main Form action for the subject data page, it calls /state on main and renders the values back to the user
 function forming(form){
     var f = $("#" + form);
     var url = f.attr("action");
@@ -87,6 +96,7 @@ function forming(form){
     $("#index-content").load('/db');
 }
 
+//This is the main Form action for the stats data page, it calls /state on main and renders the values back to the user
 function norming(form){
     var f = $("#" + form);
     var url = f.attr("action");

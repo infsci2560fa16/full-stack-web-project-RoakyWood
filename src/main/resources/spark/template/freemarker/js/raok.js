@@ -1,10 +1,17 @@
+//Elliott Levenson
+//INFOSCI 2560
+//December 12, 2016
+//raok.js
+//This is a file of Javascripts
+
+//Function to go to an acknowledgment form
 function agree(url) {
         //alert("Select OK to Acknowledge that you have read the terms and agree.");
         my_url = url;
 	    newwindow=window.open(url,'Acknowledge','height=600,width=800');
 }
-
-//Take in parameter to call the one function
+/*
+//Take in parameter to clear a field
 function clear_on_focus(subject_field){
     var my_subject_field = subject_field;
     if(this.value !==''){
@@ -13,6 +20,7 @@ function clear_on_focus(subject_field){
     } 
 }
 
+//Window close function
 function closelio(){
     window.close();
 }
@@ -54,12 +62,15 @@ var radios = document.getElementsByName('gender');
         }
     }
 }
+*/
 
+//Function to display the current date to the user
 function timey() { 
 	var my_time = new Date();
 	alert(my_time); 
 }
 
+//All calculations for BMI, BMR and Bodyfat
 function calculate() {
 	var height, feet, meters;
 	var pounds, kilograms;
