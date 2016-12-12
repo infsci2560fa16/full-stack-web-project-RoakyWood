@@ -1,3 +1,12 @@
+<!--
+Elliott Levenson
+INFOSCI 2560
+December 12, 2016
+BACT
+sign_up.ftl
+This is the BACT ftl Sign Up page
+-->
+
   <h1 id = "titlio" >Sign-up - Bariatric Assessment Clinical Trials</h1>
     <p class="hipplio">Personal Data Entry</p>
       <div class="devo">Please enter your personal data. You will not be identified by name.</div>

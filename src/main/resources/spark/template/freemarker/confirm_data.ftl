@@ -1,3 +1,12 @@
+<!--
+Elliott Levenson
+INFOSCI 2560
+December 12, 2016
+BACT
+confirm_data.ftl
+This is the BACT ftl Acknowledgment page
+-->
+
 <h1 id = "titlio" >Confirm Data - Bariatric Assessment Clinical Trials</h1>
 <p class="hipplio">Please review your data.</p>
 <div class="devo">This is your Personal Progress Data Entry as entered.</div>

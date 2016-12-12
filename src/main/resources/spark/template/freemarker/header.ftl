@@ -1,3 +1,12 @@
+<!--
+Elliott Levenson
+INFOSCI 2560
+December 12, 2016
+BACT
+header.ftl
+This is the BACT ftl header page
+-->
+
 <meta charset="UTF-8">
 <title id="titlio">Welcome to Bariatric Assessment Clinical Trials</title>
 <br />

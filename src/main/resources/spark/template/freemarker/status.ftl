@@ -1,3 +1,12 @@
+<!--
+Elliott Levenson
+INFOSCI 2560
+December 12, 2016
+BACT
+status.ftl
+This is the BACT ftl Status Entry page
+-->
+
   <h1 id = "titlio" >Daily Update and Status Calculations - Bariatric Assessment Clinical Trials</h1>
       <p class="hipplio">Personal Progress Data Entry</p>
       <div class="devo">Please enter your progress data. Your body composition data will be saved.</div>

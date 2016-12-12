@@ -1,6 +1,7 @@
 //Elliott Levenson
 //INFOSCI 2560
 //December 12, 2016
+//BACT
 //raok.js
 //This is a file of Javascripts
 
@@ -10,59 +11,6 @@ function agree(url) {
         my_url = url;
 	    newwindow=window.open(url,'Acknowledge','height=600,width=800');
 }
-/*
-//Take in parameter to clear a field
-function clear_on_focus(subject_field){
-    var my_subject_field = subject_field;
-    if(this.value !==''){
-        document.getElementById(my_subject_field).value='';
-        return false; 
-    } 
-}
-
-//Window close function
-function closelio(){
-    window.close();
-}
-
-function slick(){
-    location.href='sign_up.ftl';
-}
-
-function hlick(){
-    location.href='help.ftl';
-}
-
-function thlick(){
-    location.href='thanx.ftl';
-}
-
-function cdlick(){
-    location.href='confirm_data.ftl';
-}
-
-function colick(){
-    location.href='congrats.ftl';
-}
-
-function ilick(){
-    location.href='/';
-}
-
-function stlick(){
-    location.href='status.ftl';
-}
-
-function radio_value(){
-var radios = document.getElementsByName('gender');
-    for (var i = 0, length = radios.length; i < length; i++) {
-        if (radios[i].checked) {
-            alert(radios[i].value);
-            break;
-        }
-    }
-}
-*/
 
 //Function to display the current date to the user
 function timey() { 
@@ -103,4 +51,3 @@ function calculate() {
 	document.getElementById("bmr").value = BMR;
 	document.getElementById("bodyfat").value = bodyFatPercent;
 } // calculate
-

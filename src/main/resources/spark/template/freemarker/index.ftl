@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!--
+//Elliott Levenson
+//INFOSCI 2560
+//December 12, 2016
+//BACT
+//index.ftl
+//This is the BACT Index page
+-->
 <html>
 <head>
   <#include "header.ftl">

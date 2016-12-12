@@ -1,6 +1,7 @@
 //Elliott Levenson
 //INFOSCI 2560
 //December 12, 2016
+//BACT
 //jqneu.js
 //This is a file of Javascripts using the jQuery Library
 
@@ -65,14 +66,6 @@ function appendTextcd() {
     $(document).ready(function(){
         var data = $('#current_date').val();
         $("#destino_date_entry").append(" " + data + " ");
-    });
-}
-
-function dateEntry() {
-    $(document).ready(function(){
-        var date = new Date();
-        var dato = date.getFullYear() + '-' + date.getMonth() + '-' +  date.getDate();
-        return dato;
     });
 }
 
