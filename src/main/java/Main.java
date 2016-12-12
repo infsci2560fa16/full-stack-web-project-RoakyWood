@@ -64,7 +64,7 @@ public class Main {
           stmts.executeUpdate("INSERT INTO subject VALUES (DEFAULT,'" + request.queryParams("City") + "','" + request.queryParams("State") + "','" + request.queryParams("Gender") + "','" + request.queryParams("Marital") + "','" + request.queryParams("Height") + "','" + request.queryParams("DOB") + "','" + request.queryParams("Starting Weight") + "','" + request.queryParams("Starting Waist") + "','" + request.queryParams("Current Date") + "')");
           stmts.executeUpdate("COMMIT");
           //ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
-          ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT (MAX(subject_id) + 1) FROM subject)");
+          /*ResultSet rss = stmts.executeQuery("SELECT * FROM subject ORDER BY subject_id DESC LIMIT 1");
           ArrayList<String> outputs = new ArrayList<String>();
 
           while (rss.next()) {
@@ -80,7 +80,7 @@ public class Main {
             outputs.add( "Starting Date: " + rss.getDate("date_entry"));
            }
 
-          attributes.put("results", outputs);
+          attributes.put("results", outputs);*/
           return new ModelAndView(attributes, "db.ftl");
         } 
         catch (Exception e) {
@@ -99,8 +99,8 @@ public class Main {
           connection = DatabaseUrl.extract().getConnection();
           Statement stmts = connection.createStatement();
           //ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT MAX(subject_id) FROM subject)");
-          ResultSet rss = stmts.executeQuery("SELECT * FROM subject WHERE subject_id = (SELECT (MAX(subject_id) + 1) FROM subject)");
-
+          ResultSet rss = stmts.executeQuery("SELECT * FROM subject ORDER BY subject_id DESC LIMIT 1");
+          
           ArrayList<String> outputs = new ArrayList<String>();
           while (rss.next()) {
             outputs.add( "Subject: " + rss.getInt("subject_id"));
