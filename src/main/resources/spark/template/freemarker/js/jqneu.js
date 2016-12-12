@@ -84,7 +84,7 @@ function forming(form){
     $.post("/state", formData).done(function (data) {
     });
     $("#index-content").empty();
-    $("#index-content").load('db');
+    $("#index-content").load('/state');
 }
 
 function norming(form){
