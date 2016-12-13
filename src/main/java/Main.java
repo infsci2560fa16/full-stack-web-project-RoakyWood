@@ -1,3 +1,12 @@
+/*
+Elliott Levenson
+INFOSCI 2560
+December 12, 2016
+BACT
+Main.java
+This is the BACT Java Spark Freemarker File
+*/
+
 import java.sql.*;
 import java.util.HashMap;
 import java.util.ArrayList;
@@ -55,6 +64,10 @@ public class Main {
     get("/xml/bact.xml", (request, response) -> {
             Map<String, Object> attributes = new HashMap<>();
             return new ModelAndView(attributes, "/xml/bact.xml");
+    }, new FreeMarkerEngine()); 
+    get("/json/bact.json", (request, response) -> {
+            Map<String, Object> attributes = new HashMap<>();
+            return new ModelAndView(attributes, "/xml/bact.json");
     }, new FreeMarkerEngine()); 
     post("/state", (request, response) -> {
       Connection connection = null;

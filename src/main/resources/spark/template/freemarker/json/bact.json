@@ -1,0 +1,25 @@
+/*
+Elliott Levenson
+INFOSCI 2560
+December 12, 2016
+BACT
+bact.json
+This is the BACT json file
+*/
+
+{
+        "subject":
+        {
+                "city": "Pittsburgh",
+                "state": "PA",
+                "gender": "Male",
+                "marital": "M",
+                "height": 75.50,
+                "dob": "1961-12-20",
+                "startingweight": 195.60,
+                "startingwaist": 33.50,
+                "currentdate": "2016-12-12",
+                "subjectid": 1
+        }
+}
+
