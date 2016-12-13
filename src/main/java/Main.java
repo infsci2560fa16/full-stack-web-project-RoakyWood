@@ -69,7 +69,7 @@ public class Main {
             Map<String, Object> attributes = new HashMap<>();
 
             //GSON Functionality
-            JsonReader jsonReader = new JsonReader(new FileReader("/json/bact.json"));
+            /*JsonReader jsonReader = new JsonReader(new FileReader("/json/bact.json"));
             jsonReader.beginObject();
             while (jsonReader.hasNext()) {
             String name = jsonReader.nextName();
@@ -80,7 +80,7 @@ public class Main {
             jsonReader.endObject();
             jsonReader.close();
             //GSON Functionality
-
+            */
             return new ModelAndView(attributes, "/xml/bact.json");
     }, new FreeMarkerEngine()); 
     post("/state", (request, response) -> {
@@ -183,7 +183,7 @@ public class Main {
   }
 
   //GSON read json function
-  public static void readApp(JsonReader jsonReader) throws IOException{
+  /*public static void readApp(JsonReader jsonReader) throws IOException{
       jsonReader.beginObject();
       while (jsonReader.hasNext()) {
           String name = jsonReader.nextName();
@@ -201,6 +201,6 @@ public class Main {
               jsonReader.endObject();
       }
       jsonReader.endObject();
-  }
+  }*/
   //End of GSON function
 }
